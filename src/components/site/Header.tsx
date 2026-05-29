@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { Menu, X, Phone, Mail, MapPin } from "lucide-react";
+import arksLogo from "@/assets/arks-logo.png";
 
 const nav = [
   { to: "/", label: "Naslovnica" },
