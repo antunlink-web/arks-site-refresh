@@ -26,14 +26,14 @@ export function Header() {
     <header className="sticky top-0 z-40 w-full">
       {/* Utility bar */}
       <div className="hidden border-b border-brand-deep/40 bg-brand-deep text-brand-foreground lg:block">
-        <div className="mx-auto flex h-9 max-w-7xl items-center justify-between px-6 text-[12px] lg:px-8">
-          <div className="flex items-center gap-6 text-white/75">
-            <span className="inline-flex items-center gap-1.5"><MapPin className="h-3.5 w-3.5" /> Osječka 163, Tenja, Osijek</span>
-            <span className="inline-flex items-center gap-1.5"><Mail className="h-3.5 w-3.5" /> <a href="mailto:arks@arks.hr" className="hover:text-white">arks@arks.hr</a></span>
+        <div className="mx-auto flex h-11 max-w-7xl items-center justify-between px-6 text-[12.5px] lg:px-8">
+          <div className="flex items-center gap-7 text-white/80">
+            <span className="inline-flex items-center gap-2"><MapPin className="h-3.5 w-3.5" /> Osječka 163, Tenja, Osijek</span>
+            <span className="inline-flex items-center gap-2"><Mail className="h-3.5 w-3.5" /> <a href="mailto:arks@arks.hr" className="hover:text-white">arks@arks.hr</a></span>
           </div>
-          <div className="flex items-center gap-5 text-white/75">
+          <div className="flex items-center gap-6 text-white/80">
             <span>Pon – Pet · 08:00 – 16:00</span>
-            <a href="tel:+38531275257" className="inline-flex items-center gap-1.5 font-medium text-white hover:text-white/90">
+            <a href="tel:+38531275257" className="inline-flex items-center gap-2 font-medium text-white hover:text-white/90">
               <Phone className="h-3.5 w-3.5" /> +385 (0)31 275 257
             </a>
           </div>
@@ -46,25 +46,25 @@ export function Header() {
           scrolled ? "border-border bg-background/95 shadow-[0_1px_0_0_rgba(0,0,0,0.02)] backdrop-blur" : "border-border/60 bg-background"
         }`}
       >
-        <div className="mx-auto flex h-20 max-w-7xl items-center justify-between gap-6 px-4 sm:px-6 lg:h-[88px] lg:px-8">
+        <div className="mx-auto flex h-20 max-w-7xl items-center justify-between gap-8 px-4 sm:px-6 lg:h-24 lg:px-8">
           <Link to="/" className="flex items-center gap-4" onClick={() => setOpen(false)}>
-            <span className="grid h-12 w-12 place-items-center rounded-sm bg-brand text-brand-foreground ring-1 ring-brand-deep/20">
-              <span className="font-display text-[22px] leading-none">A</span>
+            <span className="grid h-12 w-12 place-items-center rounded-sm bg-brand text-brand-foreground ring-1 ring-brand-deep/20 lg:h-14 lg:w-14">
+              <span className="font-display text-[22px] leading-none lg:text-[26px]">A</span>
             </span>
             <span className="flex flex-col leading-tight">
-              <span className="font-display text-2xl tracking-tight text-foreground lg:text-[28px]">ARKS</span>
-              <span className="mt-0.5 hidden text-[10.5px] uppercase tracking-[0.16em] text-muted-foreground sm:block">
-                Agencija za razvoj i kontrolu sigurnosti d.o.o.
+              <span className="font-display text-[26px] tracking-tight text-foreground lg:text-[30px]">ARKS</span>
+              <span className="mt-1 hidden text-[10.5px] uppercase tracking-[0.18em] text-muted-foreground sm:block">
+                Agencija za razvoj i kontrolu sigurnosti
               </span>
             </span>
           </Link>
 
-          <nav className="hidden items-center gap-8 lg:flex">
+          <nav className="hidden items-center gap-9 lg:flex xl:gap-11">
             {nav.map((item) => (
               <Link
                 key={item.to}
                 to={item.to}
-                className="text-[13.5px] font-medium tracking-wide text-foreground/75 transition-colors hover:text-brand"
+                className="text-[14px] font-medium tracking-wide text-foreground/80 transition-colors hover:text-brand"
                 activeProps={{ className: "text-brand" }}
                 activeOptions={{ exact: item.to === "/" }}
               >
@@ -76,7 +76,7 @@ export function Header() {
           <div className="hidden items-center gap-3 lg:flex">
             <Link
               to="/kontakt"
-              className="inline-flex items-center rounded-sm border border-brand bg-brand px-5 py-2.5 text-[13px] font-semibold uppercase tracking-wider text-brand-foreground transition-colors hover:bg-brand-deep"
+              className="inline-flex items-center rounded-sm border border-brand bg-brand px-5 py-3 text-[12.5px] font-semibold uppercase tracking-[0.12em] text-brand-foreground shadow-sm transition-colors hover:bg-brand-deep"
             >
               Zatražite ponudu
             </Link>
