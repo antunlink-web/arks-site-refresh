@@ -96,25 +96,26 @@ function Home() {
               <span>Od 1998. — Agencija za razvoj i kontrolu sigurnosti</span>
             </div>
 
-            <h1 className="mt-7 font-display text-[2.6rem] leading-[1.05] tracking-tight text-foreground sm:text-6xl lg:text-[4.25rem]">
-              Pouzdana podrška za <em className="italic text-brand">sigurnost</em>, zaštitu na radu i usklađenost poslovanja.
+            <h1 className="mt-7 font-display text-[2.5rem] leading-[1.08] tracking-tight text-foreground sm:text-[3.4rem] lg:text-[3.9rem]">
+              Pouzdana podrška za <em className="italic text-brand">sigurnost</em>,<br className="hidden sm:block" />
+              zaštitu na radu i usklađenost poslovanja.
             </h1>
 
-            <p className="mt-7 max-w-2xl text-[15.5px] leading-[1.7] text-foreground/70 sm:text-[17px]">
-              Pomažemo hrvatskim tvrtkama u području zaštite na radu, zaštite od požara i zaštite okoliša —
-              jasno, stručno i u skladu sa zakonskim obvezama.
+            <p className="mt-7 max-w-2xl text-[16.5px] leading-[1.75] text-foreground/75 sm:text-[18px]">
+              Pomažemo hrvatskim tvrtkama u području zaštite na radu, zaštite od požara
+              i zaštite okoliša — jasno, stručno i u skladu sa zakonskim obvezama.
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-3">
               <Link
                 to="/kontakt"
-                className="inline-flex items-center gap-2 rounded-sm bg-brand px-6 py-3.5 text-[13px] font-semibold uppercase tracking-wider text-brand-foreground transition-colors hover:bg-brand-deep"
+                className="inline-flex items-center gap-2 rounded-sm bg-brand px-7 py-4 text-[13.5px] font-semibold uppercase tracking-[0.12em] text-brand-foreground shadow-sm transition-colors hover:bg-brand-deep"
               >
                 Zatražite ponudu <ArrowRight className="h-4 w-4" />
               </Link>
               <a
                 href="tel:+38531275257"
-                className="inline-flex items-center gap-2 rounded-sm border border-brand/25 bg-transparent px-6 py-3.5 text-[13px] font-semibold uppercase tracking-wider text-brand transition-colors hover:bg-brand/5"
+                className="inline-flex items-center gap-2 rounded-sm border border-brand/30 bg-background px-7 py-4 text-[13.5px] font-semibold uppercase tracking-[0.12em] text-brand transition-colors hover:bg-brand/5"
               >
                 <Phone className="h-4 w-4" /> +385 (0)31 275 257
               </a>
@@ -298,17 +299,17 @@ function Home() {
                 Stručnost, povjerenje i jasna komunikacija.
               </h2>
             </div>
-            <p className="max-w-md text-sm leading-relaxed text-white/70">
+            <p className="max-w-md text-[14.5px] leading-relaxed text-white/80">
               Naš pristup počiva na stručnosti, dosljednosti i razumijevanju stvarnih
               poslovnih obveza koje propisi nameću hrvatskim tvrtkama.
             </p>
           </div>
 
-          <div className="mt-14 grid grid-cols-1 gap-px overflow-hidden border border-white/10 bg-white/10 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-14 grid grid-cols-1 gap-px overflow-hidden border border-white/15 bg-white/15 sm:grid-cols-2 lg:grid-cols-4">
             {why.map((w, i) => (
               <div key={w.title} className="flex flex-col bg-brand-deep p-7">
                 <div className="flex items-center justify-between">
-                  <span className="num text-[11px] font-semibold uppercase tracking-[0.18em] text-white/45">
+                  <span className="num text-[11px] font-semibold uppercase tracking-[0.18em] text-white/55">
                     0{i + 1}
                   </span>
                   <w.icon className="h-5 w-5 text-safety" />
@@ -316,7 +317,7 @@ function Home() {
                 <h3 className="mt-6 font-display text-lg leading-tight tracking-tight text-white">
                   {w.title}
                 </h3>
-                <p className="mt-3 text-[13.5px] leading-relaxed text-white/65">{w.desc}</p>
+                <p className="mt-3 text-[14px] leading-relaxed text-white/80">{w.desc}</p>
               </div>
             ))}
           </div>
@@ -347,13 +348,13 @@ function Home() {
             <div className="flex flex-wrap gap-3">
               <Link
                 to="/kontakt"
-                className="inline-flex items-center gap-2 rounded-sm bg-brand px-6 py-3.5 text-[13px] font-semibold uppercase tracking-wider text-brand-foreground hover:bg-brand-deep"
+                className="inline-flex items-center gap-2 rounded-sm bg-brand px-7 py-4 text-[13.5px] font-semibold uppercase tracking-[0.12em] text-brand-foreground shadow-sm hover:bg-brand-deep"
               >
                 <Mail className="h-4 w-4" /> Pošaljite upit
               </Link>
               <a
                 href="tel:+38531275257"
-                className="inline-flex items-center gap-2 rounded-sm border border-brand/30 bg-background px-6 py-3.5 text-[13px] font-semibold uppercase tracking-wider text-brand hover:bg-brand/5"
+                className="inline-flex items-center gap-2 rounded-sm border border-brand/30 bg-background px-7 py-4 text-[13.5px] font-semibold uppercase tracking-[0.12em] text-brand hover:bg-brand/5"
               >
                 <Phone className="h-4 w-4" /> Nazovite nas
               </a>
@@ -400,10 +401,10 @@ function ServiceRow({
           Detalji usluge <ArrowRight className="h-4 w-4" />
         </Link>
       </div>
-      <ul className="grid gap-x-8 gap-y-3 lg:col-span-7 sm:grid-cols-2">
+      <ul className="grid gap-x-10 gap-y-1 lg:col-span-7 sm:grid-cols-2">
         {points.map((p) => (
-          <li key={p} className="flex items-start gap-3 border-b border-dashed border-border py-2.5 text-[14.5px] text-foreground/80">
-            <Check className="mt-0.5 h-4 w-4 shrink-0 text-safety" />
+          <li key={p} className="flex items-start gap-3 border-b border-dashed border-border py-3 text-[14.5px] leading-relaxed text-foreground/85">
+            <Check className="mt-1 h-4 w-4 shrink-0 text-safety" />
             <span>{p}</span>
           </li>
         ))}
