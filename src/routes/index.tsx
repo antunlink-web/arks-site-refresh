@@ -401,10 +401,10 @@ function ServiceRow({
           Detalji usluge <ArrowRight className="h-4 w-4" />
         </Link>
       </div>
-      <ul className="grid gap-x-8 gap-y-3 lg:col-span-7 sm:grid-cols-2">
+      <ul className="grid gap-x-10 gap-y-1 lg:col-span-7 sm:grid-cols-2">
         {points.map((p) => (
-          <li key={p} className="flex items-start gap-3 border-b border-dashed border-border py-2.5 text-[14.5px] text-foreground/80">
-            <Check className="mt-0.5 h-4 w-4 shrink-0 text-safety" />
+          <li key={p} className="flex items-start gap-3 border-b border-dashed border-border py-3 text-[14.5px] leading-relaxed text-foreground/85">
+            <Check className="mt-1 h-4 w-4 shrink-0 text-safety" />
             <span>{p}</span>
           </li>
         ))}
