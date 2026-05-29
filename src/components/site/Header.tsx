@@ -48,16 +48,12 @@ export function Header() {
         }`}
       >
         <div className="mx-auto flex h-20 max-w-7xl items-center justify-between gap-8 px-4 sm:px-6 lg:h-24 lg:px-8">
-          <Link to="/" className="flex items-center gap-4" onClick={() => setOpen(false)}>
-            <span className="grid h-12 w-12 place-items-center rounded-sm bg-brand text-brand-foreground ring-1 ring-brand-deep/20 lg:h-14 lg:w-14">
-              <span className="font-display text-[22px] leading-none lg:text-[26px]">A</span>
-            </span>
-            <span className="flex flex-col leading-tight">
-              <span className="font-display text-[26px] tracking-tight text-foreground lg:text-[30px]">ARKS</span>
-              <span className="mt-1 hidden text-[10.5px] uppercase tracking-[0.18em] text-muted-foreground sm:block">
-                Agencija za razvoj i kontrolu sigurnosti
-              </span>
-            </span>
+          <Link to="/" className="flex items-center" onClick={() => setOpen(false)} aria-label="ARKS — naslovnica">
+            <img
+              src={arksLogo}
+              alt="ARKS — Agencija za razvoj i kontrolu sigurnosti d.o.o."
+              className="h-12 w-auto lg:h-14"
+            />
           </Link>
 
           <nav className="hidden items-center gap-9 lg:flex xl:gap-11">
