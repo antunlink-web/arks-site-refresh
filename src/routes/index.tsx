@@ -4,25 +4,26 @@ import {
   Flame,
   Leaf,
   ArrowRight,
-  CheckCircle2,
+  Check,
   ClipboardCheck,
   GraduationCap,
   FileCheck2,
-  Handshake,
-  MessageSquare,
   Scale,
   Phone,
   Mail,
+  ShieldCheck,
+  BookOpen,
+  Building2,
 } from "lucide-react";
 import heroImg from "@/assets/hero-safety.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "ARKS d.o.o. — Zaštita na radu, požara i okoliša | Osijek" },
-      { name: "description", content: "Stručna podrška za zaštitu na radu, zaštitu od požara i zaštitu okoliša. Procjena rizika, dokumentacija, izobrazba i ispunjavanje zakonskih obveza." },
-      { property: "og:title", content: "ARKS d.o.o. — Zaštita na radu, požara i okoliša" },
-      { property: "og:description", content: "Pomažemo tvrtkama u sigurnijem poslovanju i ispunjavanju zakonskih obveza." },
+      { title: "ARKS d.o.o. — Zaštita na radu, zaštita od požara i zaštita okoliša | Osijek" },
+      { name: "description", content: "Agencija za razvoj i kontrolu sigurnosti — stručna podrška za zaštitu na radu, zaštitu od požara i zaštitu okoliša. Dokumentacija, osposobljavanja, pregledi." },
+      { property: "og:title", content: "ARKS d.o.o. — Pouzdana podrška za sigurnost i usklađenost poslovanja" },
+      { property: "og:description", content: "Pomažemo tvrtkama u području zaštite na radu, zaštite od požara i zaštite okoliša — jasno, stručno i u skladu sa zakonskim obvezama." },
       { property: "og:url", content: "/" },
     ],
     links: [{ rel: "canonical", href: "/" }],
@@ -32,224 +33,290 @@ export const Route = createFileRoute("/")({
 
 const services = [
   {
+    n: "01",
     icon: HardHat,
     title: "Zaštita na radu",
-    desc: "Procjena rizika, osposobljavanje radnika i izrada dokumentacije propisane zakonom.",
+    desc: "Procjena rizika, propisana dokumentacija i osposobljavanje radnika za rad na siguran način.",
     to: "/zastita-na-radu",
+    code: "ZNR",
   },
   {
+    n: "02",
     icon: Flame,
     title: "Zaštita od požara",
-    desc: "Planovi zaštite od požara, izobrazba pučanstva i pregled mjera u poslovnim objektima.",
+    desc: "Planovi zaštite od požara, osposobljavanje pučanstva i pregledi mjera u poslovnim objektima.",
     to: "/zastita-od-pozara",
+    code: "ZOP",
   },
   {
+    n: "03",
     icon: Leaf,
     title: "Zaštita okoliša",
-    desc: "Savjetovanje, vođenje propisanih evidencija i podrška u ispunjavanju ekoloških obveza.",
+    desc: "Vođenje propisanih evidencija, savjetovanje i podrška u ispunjavanju ekoloških obveza.",
     to: "/zastita-okolisa",
+    code: "ZO",
   },
 ] as const;
 
 const help = [
-  { icon: FileCheck2, title: "Zakonska usklađenost", desc: "Pratimo propise i pomažemo da poslovanje bude usklađeno s važećim zakonima." },
-  { icon: ClipboardCheck, title: "Dokumentacija i evidencije", desc: "Izrada i održavanje propisane dokumentacije iz područja sigurnosti i zaštite." },
-  { icon: GraduationCap, title: "Izobrazba i osposobljavanje", desc: "Osposobljavanje radnika za rad na siguran način i postupanje u slučaju opasnosti." },
-  { icon: ClipboardCheck, title: "Pregledi i kontrole", desc: "Stručni pregledi, procjene rizika i savjetovanje na terenu." },
+  { icon: Scale, title: "Zakonska usklađenost", desc: "Pratimo izmjene propisa i pomažemo da poslovanje bude usklađeno sa Zakonom o zaštiti na radu, Zakonom o zaštiti od požara i propisima iz područja okoliša." },
+  { icon: FileCheck2, title: "Dokumentacija i evidencije", desc: "Izrada i održavanje propisane dokumentacije: procjene rizika, planovi, pravilnici, očevidnici i evidencije iz područja sigurnosti i zaštite." },
+  { icon: GraduationCap, title: "Osposobljavanja", desc: "Osposobljavanje radnika, poslodavaca i ovlaštenika za rad na siguran način te za provedbu mjera zaštite od požara." },
+  { icon: ClipboardCheck, title: "Pregledi i savjetovanje", desc: "Stručni pregledi na terenu, savjetovanje pri uređenju radnih mjesta i podrška u kontaktu s nadležnim tijelima." },
 ];
 
 const why = [
-  { icon: Scale, title: "Iskustvo u sigurnosti i zaštiti", desc: "Dugogodišnji rad s tvrtkama različitih veličina i djelatnosti." },
-  { icon: Handshake, title: "Individualan pristup", desc: "Rješenja prilagođena specifičnostima i potrebama svakog klijenta." },
-  { icon: MessageSquare, title: "Jasna komunikacija", desc: "Praktični savjeti bez nepotrebne komplikacije i pravne magle." },
-  { icon: FileCheck2, title: "Podrška u zakonskim obvezama", desc: "Pomoć pri ispunjavanju obveza propisanih zakonima i pravilnicima." },
+  { icon: ShieldCheck, title: "Stručnost u području sigurnosti i zaštite", desc: "Iskustvo u radu s tvrtkama različitih veličina i djelatnosti." },
+  { icon: Building2, title: "Praktičan pristup poslovnim obvezama", desc: "Rješenja prilagođena stvarnim potrebama svakog klijenta." },
+  { icon: BookOpen, title: "Jasna komunikacija bez kompliciranja", desc: "Razumljivi savjeti, bez nepotrebne pravne magle." },
+  { icon: FileCheck2, title: "Podrška u dokumentaciji i pregledima", desc: "Pratimo vas od procjene rizika do osposobljavanja." },
 ];
 
 function Home() {
   return (
     <>
       {/* HERO */}
-      <section className="relative overflow-hidden border-b border-border bg-slate-surface">
-        <div className="mx-auto grid max-w-7xl items-center gap-12 px-4 py-16 sm:px-6 lg:grid-cols-12 lg:gap-10 lg:px-8 lg:py-24">
-          <div className="lg:col-span-7">
-            <div className="inline-flex items-center gap-2 rounded-full border border-border bg-background px-3 py-1 text-xs font-medium text-foreground/70">
-              <span className="h-1.5 w-1.5 rounded-full bg-safety" />
-              Sigurnost · Zaštita · Usklađenost
+      <section className="relative overflow-hidden border-b border-border bg-cream">
+        {/* Subtle blueprint grid */}
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-0 opacity-[0.04]"
+          style={{
+            backgroundImage:
+              "linear-gradient(to right, oklch(0.24 0.07 260) 1px, transparent 1px), linear-gradient(to bottom, oklch(0.24 0.07 260) 1px, transparent 1px)",
+            backgroundSize: "56px 56px",
+          }}
+        />
+
+        <div className="relative mx-auto grid max-w-7xl items-stretch gap-10 px-4 pb-12 pt-10 sm:px-6 lg:grid-cols-12 lg:gap-12 lg:px-8 lg:pb-20 lg:pt-16">
+          {/* Left */}
+          <div className="lg:col-span-7 lg:pr-6">
+            <div className="flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.22em] text-brand">
+              <span className="h-px w-8 bg-brand" />
+              <span>Od 1998. — Agencija za razvoj i kontrolu sigurnosti</span>
             </div>
-            <h1 className="mt-5 text-4xl font-bold leading-[1.1] tracking-tight text-foreground sm:text-5xl lg:text-[3.5rem]">
-              Stručna podrška za zaštitu na radu, zaštitu od požara i zaštitu okoliša.
+
+            <h1 className="mt-7 font-display text-[2.6rem] leading-[1.05] tracking-tight text-foreground sm:text-6xl lg:text-[4.25rem]">
+              Pouzdana podrška za <em className="italic text-brand">sigurnost</em>, zaštitu na radu i usklađenost poslovanja.
             </h1>
-            <p className="mt-6 max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg">
-              Pomažemo tvrtkama u ispunjavanju zakonskih obveza, procjeni rizika, izradi
-              dokumentacije i sigurnijem poslovanju.
+
+            <p className="mt-7 max-w-2xl text-[15.5px] leading-[1.7] text-foreground/70 sm:text-[17px]">
+              Pomažemo hrvatskim tvrtkama u području zaštite na radu, zaštite od požara i zaštite okoliša —
+              jasno, stručno i u skladu sa zakonskim obvezama.
             </p>
-            <div className="mt-8 flex flex-wrap gap-3">
+
+            <div className="mt-9 flex flex-wrap items-center gap-3">
               <Link
                 to="/kontakt"
-                className="inline-flex items-center gap-2 rounded-md bg-safety px-5 py-3 text-sm font-semibold text-safety-foreground transition-colors hover:opacity-90"
+                className="inline-flex items-center gap-2 rounded-sm bg-brand px-6 py-3.5 text-[13px] font-semibold uppercase tracking-wider text-brand-foreground transition-colors hover:bg-brand-deep"
               >
                 Zatražite ponudu <ArrowRight className="h-4 w-4" />
               </Link>
-              <Link
-                to="/zastita-na-radu"
-                className="inline-flex items-center gap-2 rounded-md border border-border bg-background px-5 py-3 text-sm font-semibold text-foreground hover:bg-secondary"
+              <a
+                href="tel:+38531275257"
+                className="inline-flex items-center gap-2 rounded-sm border border-brand/25 bg-transparent px-6 py-3.5 text-[13px] font-semibold uppercase tracking-wider text-brand transition-colors hover:bg-brand/5"
               >
-                Pogledajte usluge
-              </Link>
+                <Phone className="h-4 w-4" /> +385 (0)31 275 257
+              </a>
             </div>
-            <dl className="mt-10 grid grid-cols-3 gap-6 border-t border-border pt-6 text-sm">
-              <div>
-                <dt className="text-xs uppercase tracking-wider text-muted-foreground">Sjedište</dt>
-                <dd className="mt-1 font-semibold text-foreground">Tenja, Osijek</dd>
-              </div>
-              <div>
-                <dt className="text-xs uppercase tracking-wider text-muted-foreground">Područja</dt>
-                <dd className="mt-1 font-semibold text-foreground">ZNR · ZOP · ZO</dd>
-              </div>
-              <div>
-                <dt className="text-xs uppercase tracking-wider text-muted-foreground">Klijenti</dt>
-                <dd className="mt-1 font-semibold text-foreground">Tvrtke i ustanove</dd>
-              </div>
+
+            {/* Trust indicators */}
+            <dl className="mt-12 grid grid-cols-1 gap-px overflow-hidden rounded-sm border border-border bg-border sm:grid-cols-3">
+              <TrustCell label="Sjedište" value="Tenja, Osijek" />
+              <TrustCell label="Područja" value="ZNR · ZOP · Okoliš" />
+              <TrustCell label="Podrška" value="Dokumentacija · Osposobljavanja · Pregledi" />
             </dl>
           </div>
 
-          <div className="lg:col-span-5">
-            <div className="relative">
-              <div className="absolute -inset-3 rounded-2xl bg-brand/10 blur-xl" aria-hidden />
+          {/* Right — image */}
+          <div className="relative lg:col-span-5">
+            <div className="relative h-full min-h-[420px]">
+              <div className="absolute -left-3 top-6 hidden h-[calc(100%-3rem)] w-px bg-brand/20 lg:block" aria-hidden />
+              <div className="absolute -top-3 left-6 hidden h-px w-[calc(100%-3rem)] bg-brand/20 lg:block" aria-hidden />
               <img
                 src={heroImg}
-                alt="Inspektor zaštite na radu u industrijskom okruženju"
-                width={1600}
-                height={1100}
-                className="relative aspect-[4/5] w-full rounded-xl object-cover shadow-xl ring-1 ring-border lg:aspect-[5/6]"
+                alt="Inspektor zaštite na radu pregledava dokumentaciju u industrijskom postrojenju"
+                width={1280}
+                height={1600}
+                className="relative h-full max-h-[640px] w-full object-cover ring-1 ring-brand-deep/10"
+                style={{ filter: "saturate(0.9) contrast(1.02)" }}
               />
-              <div className="absolute -bottom-5 left-5 right-5 rounded-xl bg-background p-4 shadow-lg ring-1 ring-border">
-                <p className="text-xs uppercase tracking-wider text-muted-foreground">Direktna linija</p>
-                <a href="tel:+38531275257" className="mt-1 flex items-center gap-2 text-lg font-bold text-brand">
-                  <Phone className="h-4 w-4" /> +385 (0)31 275 257
-                </a>
+              {/* Compliance label overlay */}
+              <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between gap-3 bg-brand-deep/95 px-4 py-3 text-white backdrop-blur">
+                <div>
+                  <p className="text-[10px] uppercase tracking-[0.2em] text-white/55">Dosje · ARKS / 2026</p>
+                  <p className="font-display text-base">Pregled mjera zaštite na radu</p>
+                </div>
+                <span className="inline-flex items-center gap-1.5 rounded-sm border border-safety/60 px-2.5 py-1 text-[10.5px] font-semibold uppercase tracking-wider text-safety">
+                  <Check className="h-3.5 w-3.5" /> Usklađeno
+                </span>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* SERVICES INTRO */}
-      <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
-        <div className="max-w-2xl">
-          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-safety">Naše usluge</p>
-          <h2 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">
-            Tri područja, jedan pouzdan partner.
-          </h2>
-        </div>
-        <div className="mt-10 grid gap-6 md:grid-cols-3">
-          {services.map((s) => (
-            <Link
-              key={s.title}
-              to={s.to}
-              className="group flex flex-col rounded-xl border border-border bg-card p-7 transition-all hover:-translate-y-0.5 hover:border-brand/30 hover:shadow-md"
-            >
-              <span className="grid h-12 w-12 place-items-center rounded-lg bg-brand/10 text-brand">
-                <s.icon className="h-6 w-6" />
-              </span>
-              <h3 className="mt-5 text-xl font-bold">{s.title}</h3>
-              <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">{s.desc}</p>
-              <span className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-brand">
-                Saznajte više <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-              </span>
-            </Link>
-          ))}
+      {/* SERVICES INTRO — editorial layout */}
+      <section className="mx-auto max-w-7xl px-4 py-24 sm:px-6 lg:px-8">
+        <div className="grid gap-10 lg:grid-cols-12">
+          <div className="lg:col-span-5">
+            <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-safety">Područja djelovanja</p>
+            <h2 className="mt-5 font-display text-4xl leading-[1.1] tracking-tight sm:text-5xl">
+              Tri područja,<br />jedan pouzdan partner.
+            </h2>
+            <p className="mt-6 max-w-md text-[15px] leading-relaxed text-foreground/70">
+              Cjelovita stručna podrška u svim ključnim područjima sigurnosti i zaštite —
+              od procjene rizika do svakodnevne podrške u poslovanju.
+            </p>
+          </div>
+          <div className="lg:col-span-7">
+            <ul className="divide-y divide-border border-y border-border">
+              {services.map((s) => (
+                <li key={s.title}>
+                  <Link
+                    to={s.to}
+                    className="group grid grid-cols-12 items-center gap-4 py-7 transition-colors hover:bg-cream"
+                  >
+                    <span className="col-span-2 num font-display text-2xl text-brand/40 sm:text-3xl">{s.n}</span>
+                    <div className="col-span-8 sm:col-span-7">
+                      <div className="flex items-center gap-3">
+                        <s.icon className="h-5 w-5 text-brand" />
+                        <h3 className="font-display text-2xl leading-none tracking-tight">{s.title}</h3>
+                        <span className="hidden text-[10px] font-semibold uppercase tracking-[0.18em] text-muted-foreground sm:inline">· {s.code}</span>
+                      </div>
+                      <p className="mt-2 text-sm leading-relaxed text-foreground/70">{s.desc}</p>
+                    </div>
+                    <span className="col-span-2 sm:col-span-3 inline-flex items-center justify-end gap-1.5 text-[12px] font-semibold uppercase tracking-wider text-brand">
+                      <span className="hidden sm:inline">Detalji</span>
+                      <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                    </span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </section>
 
       {/* HOW WE HELP */}
-      <section className="border-y border-border bg-slate-surface">
-        <div className="mx-auto grid max-w-7xl gap-12 px-4 py-20 sm:px-6 lg:grid-cols-12 lg:px-8">
+      <section className="border-y border-border bg-cream">
+        <div className="mx-auto grid max-w-7xl gap-14 px-4 py-24 sm:px-6 lg:grid-cols-12 lg:gap-10 lg:px-8">
           <div className="lg:col-span-4">
-            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-safety">Kako vam možemo pomoći</p>
-            <h2 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">
+            <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-safety">Kako vam možemo pomoći</p>
+            <h2 className="mt-5 font-display text-4xl leading-[1.1] tracking-tight sm:text-5xl">
               Praktična podrška na svakom koraku.
             </h2>
-            <p className="mt-5 text-base leading-relaxed text-muted-foreground">
-              Klijentima pružamo cjelovitu podršku u području sigurnosti i zaštite —
-              od izrade dokumentacije i procjene rizika do osposobljavanja radnika i
-              ispunjavanja zakonskih obveza.
+            <p className="mt-6 text-[15px] leading-relaxed text-foreground/70">
+              Klijentima pružamo cjelovitu podršku — od izrade dokumentacije i procjene rizika
+              do osposobljavanja radnika i ispunjavanja zakonskih obveza.
+            </p>
+            <Link
+              to="/kontakt"
+              className="mt-7 inline-flex items-center gap-2 text-[13px] font-semibold uppercase tracking-wider text-brand hover:text-brand-deep"
+            >
+              Dogovorite konzultacije <ArrowRight className="h-4 w-4" />
+            </Link>
+          </div>
+          <div className="lg:col-span-8">
+            <div className="grid grid-cols-1 gap-px overflow-hidden border border-border bg-border sm:grid-cols-2">
+              {help.map((h, i) => (
+                <div key={h.title} className="flex flex-col bg-background p-7">
+                  <div className="flex items-center gap-3">
+                    <span className="num text-[11px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
+                      0{i + 1}
+                    </span>
+                    <span className="h-px flex-1 bg-border" />
+                    <h.icon className="h-4 w-4 text-brand" />
+                  </div>
+                  <h3 className="mt-4 font-display text-xl tracking-tight">{h.title}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-foreground/70">{h.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SERVICE DETAILS — editorial rows */}
+      <section className="mx-auto max-w-7xl px-4 py-24 sm:px-6 lg:px-8">
+        <ServiceRow
+          n="01"
+          icon={HardHat}
+          code="ZNR"
+          title="Zaštita na radu"
+          intro="Uspostava i održavanje sustava zaštite na radu u skladu s važećim propisima Republike Hrvatske."
+          to="/zastita-na-radu"
+          points={[
+            "Procjena rizika na radnim mjestima",
+            "Izrada propisane dokumentacije iz područja ZNR",
+            "Osposobljavanje radnika za rad na siguran način",
+            "Osposobljavanje poslodavaca i ovlaštenika",
+            "Vođenje evidencija iz područja zaštite na radu",
+            "Stručno savjetovanje i podrška na terenu",
+          ]}
+        />
+        <ServiceRow
+          n="02"
+          icon={Flame}
+          code="ZOP"
+          title="Zaštita od požara"
+          intro="Mjere zaštite od požara, dokumentacija i osposobljavanja prilagođeni vrsti i veličini objekta."
+          to="/zastita-od-pozara"
+          points={[
+            "Izrada planova i procjena zaštite od požara",
+            "Osposobljavanje pučanstva za provedbu mjera ZOP-a",
+            "Pregledi i savjetovanje u poslovnim objektima",
+            "Pomoć pri ispunjavanju zakonskih obveza ZOP-a",
+            "Vođenje propisane dokumentacije i evidencija",
+          ]}
+        />
+        <ServiceRow
+          n="03"
+          icon={Leaf}
+          code="ZO"
+          title="Zaštita okoliša"
+          intro="Podrška u ispunjavanju ekoloških obveza, vođenje evidencija i suradnja s nadležnim tijelima."
+          to="/zastita-okolisa"
+          last
+          points={[
+            "Savjetovanje iz područja zaštite okoliša",
+            "Vođenje propisanih evidencija i očevidnika",
+            "Podrška pri ispunjavanju ekoloških obveza",
+            "Suradnja s nadležnim tijelima",
+            "Praćenje propisa i obavještavanje klijenata",
+          ]}
+        />
+      </section>
+
+      {/* WHY ARKS — credibility band */}
+      <section className="border-t border-brand-deep/40 bg-brand-deep text-white">
+        <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+          <div className="flex flex-col items-start justify-between gap-8 lg:flex-row lg:items-end">
+            <div className="max-w-2xl">
+              <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-safety">Zašto ARKS</p>
+              <h2 className="mt-4 font-display text-4xl leading-[1.1] tracking-tight text-white sm:text-5xl">
+                Stručnost, povjerenje i jasna komunikacija.
+              </h2>
+            </div>
+            <p className="max-w-md text-sm leading-relaxed text-white/70">
+              Naš pristup počiva na stručnosti, dosljednosti i razumijevanju stvarnih
+              poslovnih obveza koje propisi nameću hrvatskim tvrtkama.
             </p>
           </div>
-          <div className="grid gap-4 sm:grid-cols-2 lg:col-span-8">
-            {help.map((h) => (
-              <div key={h.title} className="rounded-xl border border-border bg-card p-6">
-                <span className="grid h-10 w-10 place-items-center rounded-md bg-secondary text-brand">
-                  <h.icon className="h-5 w-5" />
-                </span>
-                <h3 className="mt-4 text-base font-bold">{h.title}</h3>
-                <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">{h.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
-      {/* SERVICE DETAILS */}
-      <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
-        <div className="space-y-6">
-          <ServicePreview
-            icon={HardHat}
-            title="Zaštita na radu"
-            to="/zastita-na-radu"
-            points={[
-              "Procjena rizika na radnim mjestima",
-              "Izrada propisane dokumentacije iz ZNR",
-              "Osposobljavanje radnika za rad na siguran način",
-              "Osposobljavanje poslodavaca i ovlaštenika",
-              "Vođenje evidencija iz područja zaštite na radu",
-              "Stručno savjetovanje i podrška na terenu",
-            ]}
-          />
-          <ServicePreview
-            icon={Flame}
-            title="Zaštita od požara"
-            to="/zastita-od-pozara"
-            points={[
-              "Izrada planova i procjena zaštite od požara",
-              "Osposobljavanje pučanstva za provedbu mjera ZOP-a",
-              "Pregledi i savjetovanje u poslovnim objektima",
-              "Pomoć pri ispunjavanju zakonskih obveza ZOP-a",
-              "Vođenje propisane dokumentacije i evidencija",
-            ]}
-          />
-          <ServicePreview
-            icon={Leaf}
-            title="Zaštita okoliša"
-            to="/zastita-okolisa"
-            points={[
-              "Savjetovanje iz područja zaštite okoliša",
-              "Vođenje propisanih evidencija i očevidnika",
-              "Podrška pri ispunjavanju ekoloških obveza",
-              "Suradnja s nadležnim tijelima",
-              "Praćenje propisa i obavještavanje klijenata",
-            ]}
-          />
-        </div>
-      </section>
-
-      {/* WHY ARKS */}
-      <section className="border-t border-border bg-brand text-brand-foreground">
-        <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
-          <div className="max-w-2xl">
-            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-safety">Zašto ARKS</p>
-            <h2 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">
-              Zašto odabrati ARKS?
-            </h2>
-          </div>
-          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {why.map((w) => (
-              <div key={w.title} className="rounded-xl border border-white/10 bg-white/5 p-6 backdrop-blur">
-                <span className="grid h-10 w-10 place-items-center rounded-md bg-safety text-safety-foreground">
-                  <w.icon className="h-5 w-5" />
-                </span>
-                <h3 className="mt-4 text-base font-bold">{w.title}</h3>
-                <p className="mt-1.5 text-sm leading-relaxed text-white/75">{w.desc}</p>
+          <div className="mt-14 grid grid-cols-1 gap-px overflow-hidden border border-white/10 bg-white/10 sm:grid-cols-2 lg:grid-cols-4">
+            {why.map((w, i) => (
+              <div key={w.title} className="flex flex-col bg-brand-deep p-7">
+                <div className="flex items-center justify-between">
+                  <span className="num text-[11px] font-semibold uppercase tracking-[0.18em] text-white/45">
+                    0{i + 1}
+                  </span>
+                  <w.icon className="h-5 w-5 text-safety" />
+                </div>
+                <h3 className="mt-6 font-display text-lg leading-tight tracking-tight text-white">
+                  {w.title}
+                </h3>
+                <p className="mt-3 text-[13.5px] leading-relaxed text-white/65">{w.desc}</p>
               </div>
             ))}
           </div>
@@ -257,28 +324,36 @@ function Home() {
       </section>
 
       {/* CONTACT CTA */}
-      <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
-        <div className="rounded-2xl border border-border bg-slate-surface p-8 sm:p-14">
-          <div className="flex flex-col items-start justify-between gap-8 lg:flex-row lg:items-center">
+      <section className="mx-auto max-w-7xl px-4 py-24 sm:px-6 lg:px-8">
+        <div className="relative overflow-hidden border border-border bg-cream px-6 py-14 sm:px-14">
+          <div
+            aria-hidden
+            className="absolute inset-y-0 right-0 hidden w-1/3 opacity-[0.05] lg:block"
+            style={{
+              backgroundImage:
+                "repeating-linear-gradient(45deg, oklch(0.24 0.07 260) 0 1px, transparent 1px 14px)",
+            }}
+          />
+          <div className="relative flex flex-col items-start justify-between gap-10 lg:flex-row lg:items-end">
             <div className="max-w-2xl">
-              <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-                Trebate stručnu podršku za sigurnost i zaštitu?
+              <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-safety">Kontakt</p>
+              <h2 className="mt-4 font-display text-4xl leading-[1.05] tracking-tight sm:text-5xl">
+                Trebate pouzdanog partnera za sigurnost i zaštitu?
               </h2>
-              <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-                Javite nam se s opisom potreba. Dogovorit ćemo razgovor i predložiti
-                konkretne korake za vašu tvrtku.
+              <p className="mt-5 max-w-xl text-[15px] leading-relaxed text-foreground/70">
+                Pošaljite upit i dogovorit ćemo konkretne korake prema potrebama vaše tvrtke.
               </p>
             </div>
             <div className="flex flex-wrap gap-3">
               <Link
                 to="/kontakt"
-                className="inline-flex items-center gap-2 rounded-md bg-safety px-5 py-3 text-sm font-semibold text-safety-foreground hover:opacity-90"
+                className="inline-flex items-center gap-2 rounded-sm bg-brand px-6 py-3.5 text-[13px] font-semibold uppercase tracking-wider text-brand-foreground hover:bg-brand-deep"
               >
                 <Mail className="h-4 w-4" /> Pošaljite upit
               </Link>
               <a
                 href="tel:+38531275257"
-                className="inline-flex items-center gap-2 rounded-md border border-border bg-background px-5 py-3 text-sm font-semibold text-foreground hover:bg-secondary"
+                className="inline-flex items-center gap-2 rounded-sm border border-brand/30 bg-background px-6 py-3.5 text-[13px] font-semibold uppercase tracking-wider text-brand hover:bg-brand/5"
               >
                 <Phone className="h-4 w-4" /> Nazovite nas
               </a>
@@ -290,24 +365,45 @@ function Home() {
   );
 }
 
-function ServicePreview({
-  icon: Icon, title, points, to,
-}: { icon: typeof HardHat; title: string; points: string[]; to: string }) {
+function TrustCell({ label, value }: { label: string; value: string }) {
   return (
-    <div className="grid gap-6 rounded-2xl border border-border bg-card p-8 lg:grid-cols-12 lg:gap-10">
-      <div className="lg:col-span-4">
-        <span className="grid h-12 w-12 place-items-center rounded-lg bg-brand/10 text-brand">
-          <Icon className="h-6 w-6" />
-        </span>
-        <h3 className="mt-4 text-2xl font-bold tracking-tight">{title}</h3>
-        <Link to={to} className="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-brand">
+    <div className="bg-background p-5">
+      <dt className="text-[10.5px] font-semibold uppercase tracking-[0.2em] text-muted-foreground">{label}</dt>
+      <dd className="mt-2 font-display text-lg leading-tight text-foreground">{value}</dd>
+    </div>
+  );
+}
+
+function ServiceRow({
+  n, icon: Icon, code, title, intro, points, to, last,
+}: {
+  n: string; icon: typeof HardHat; code: string; title: string; intro: string;
+  points: string[]; to: string; last?: boolean;
+}) {
+  return (
+    <div className={`grid grid-cols-1 gap-10 border-t border-border py-14 lg:grid-cols-12 lg:gap-12 ${last ? "border-b" : ""}`}>
+      <div className="lg:col-span-5">
+        <div className="flex items-center gap-3">
+          <span className="num font-display text-3xl text-brand/40">{n}</span>
+          <span className="h-px w-10 bg-border" />
+          <span className="text-[10.5px] font-semibold uppercase tracking-[0.22em] text-muted-foreground">{code}</span>
+        </div>
+        <div className="mt-5 flex items-center gap-3">
+          <Icon className="h-6 w-6 text-brand" />
+          <h3 className="font-display text-3xl tracking-tight sm:text-4xl">{title}</h3>
+        </div>
+        <p className="mt-5 max-w-md text-[15px] leading-relaxed text-foreground/70">{intro}</p>
+        <Link
+          to={to}
+          className="mt-6 inline-flex items-center gap-2 text-[12.5px] font-semibold uppercase tracking-wider text-brand hover:text-brand-deep"
+        >
           Detalji usluge <ArrowRight className="h-4 w-4" />
         </Link>
       </div>
-      <ul className="grid gap-3 lg:col-span-8 sm:grid-cols-2">
+      <ul className="grid gap-x-8 gap-y-3 lg:col-span-7 sm:grid-cols-2">
         {points.map((p) => (
-          <li key={p} className="flex items-start gap-2.5 text-sm text-foreground/80">
-            <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-safety" />
+          <li key={p} className="flex items-start gap-3 border-b border-dashed border-border py-2.5 text-[14.5px] text-foreground/80">
+            <Check className="mt-0.5 h-4 w-4 shrink-0 text-safety" />
             <span>{p}</span>
           </li>
         ))}
