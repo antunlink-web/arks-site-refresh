@@ -9,8 +9,50 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as ZastitaOkolisaRouteImport } from './routes/zastita-okolisa'
+import { Route as ZastitaOdPozaraRouteImport } from './routes/zastita-od-pozara'
+import { Route as ZastitaNaRaduRouteImport } from './routes/zastita-na-radu'
+import { Route as PolitikaPrivatnostiRouteImport } from './routes/politika-privatnosti'
+import { Route as PolitikaKolacicaRouteImport } from './routes/politika-kolacica'
+import { Route as ONamaRouteImport } from './routes/o-nama'
+import { Route as KontaktRouteImport } from './routes/kontakt'
 import { Route as IndexRouteImport } from './routes/index'
 
+const ZastitaOkolisaRoute = ZastitaOkolisaRouteImport.update({
+  id: '/zastita-okolisa',
+  path: '/zastita-okolisa',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ZastitaOdPozaraRoute = ZastitaOdPozaraRouteImport.update({
+  id: '/zastita-od-pozara',
+  path: '/zastita-od-pozara',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ZastitaNaRaduRoute = ZastitaNaRaduRouteImport.update({
+  id: '/zastita-na-radu',
+  path: '/zastita-na-radu',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PolitikaPrivatnostiRoute = PolitikaPrivatnostiRouteImport.update({
+  id: '/politika-privatnosti',
+  path: '/politika-privatnosti',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PolitikaKolacicaRoute = PolitikaKolacicaRouteImport.update({
+  id: '/politika-kolacica',
+  path: '/politika-kolacica',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ONamaRoute = ONamaRouteImport.update({
+  id: '/o-nama',
+  path: '/o-nama',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const KontaktRoute = KontaktRouteImport.update({
+  id: '/kontakt',
+  path: '/kontakt',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
@@ -19,28 +61,130 @@ const IndexRoute = IndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/kontakt': typeof KontaktRoute
+  '/o-nama': typeof ONamaRoute
+  '/politika-kolacica': typeof PolitikaKolacicaRoute
+  '/politika-privatnosti': typeof PolitikaPrivatnostiRoute
+  '/zastita-na-radu': typeof ZastitaNaRaduRoute
+  '/zastita-od-pozara': typeof ZastitaOdPozaraRoute
+  '/zastita-okolisa': typeof ZastitaOkolisaRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/kontakt': typeof KontaktRoute
+  '/o-nama': typeof ONamaRoute
+  '/politika-kolacica': typeof PolitikaKolacicaRoute
+  '/politika-privatnosti': typeof PolitikaPrivatnostiRoute
+  '/zastita-na-radu': typeof ZastitaNaRaduRoute
+  '/zastita-od-pozara': typeof ZastitaOdPozaraRoute
+  '/zastita-okolisa': typeof ZastitaOkolisaRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/kontakt': typeof KontaktRoute
+  '/o-nama': typeof ONamaRoute
+  '/politika-kolacica': typeof PolitikaKolacicaRoute
+  '/politika-privatnosti': typeof PolitikaPrivatnostiRoute
+  '/zastita-na-radu': typeof ZastitaNaRaduRoute
+  '/zastita-od-pozara': typeof ZastitaOdPozaraRoute
+  '/zastita-okolisa': typeof ZastitaOkolisaRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/kontakt'
+    | '/o-nama'
+    | '/politika-kolacica'
+    | '/politika-privatnosti'
+    | '/zastita-na-radu'
+    | '/zastita-od-pozara'
+    | '/zastita-okolisa'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/kontakt'
+    | '/o-nama'
+    | '/politika-kolacica'
+    | '/politika-privatnosti'
+    | '/zastita-na-radu'
+    | '/zastita-od-pozara'
+    | '/zastita-okolisa'
+  id:
+    | '__root__'
+    | '/'
+    | '/kontakt'
+    | '/o-nama'
+    | '/politika-kolacica'
+    | '/politika-privatnosti'
+    | '/zastita-na-radu'
+    | '/zastita-od-pozara'
+    | '/zastita-okolisa'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  KontaktRoute: typeof KontaktRoute
+  ONamaRoute: typeof ONamaRoute
+  PolitikaKolacicaRoute: typeof PolitikaKolacicaRoute
+  PolitikaPrivatnostiRoute: typeof PolitikaPrivatnostiRoute
+  ZastitaNaRaduRoute: typeof ZastitaNaRaduRoute
+  ZastitaOdPozaraRoute: typeof ZastitaOdPozaraRoute
+  ZastitaOkolisaRoute: typeof ZastitaOkolisaRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/zastita-okolisa': {
+      id: '/zastita-okolisa'
+      path: '/zastita-okolisa'
+      fullPath: '/zastita-okolisa'
+      preLoaderRoute: typeof ZastitaOkolisaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/zastita-od-pozara': {
+      id: '/zastita-od-pozara'
+      path: '/zastita-od-pozara'
+      fullPath: '/zastita-od-pozara'
+      preLoaderRoute: typeof ZastitaOdPozaraRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/zastita-na-radu': {
+      id: '/zastita-na-radu'
+      path: '/zastita-na-radu'
+      fullPath: '/zastita-na-radu'
+      preLoaderRoute: typeof ZastitaNaRaduRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/politika-privatnosti': {
+      id: '/politika-privatnosti'
+      path: '/politika-privatnosti'
+      fullPath: '/politika-privatnosti'
+      preLoaderRoute: typeof PolitikaPrivatnostiRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/politika-kolacica': {
+      id: '/politika-kolacica'
+      path: '/politika-kolacica'
+      fullPath: '/politika-kolacica'
+      preLoaderRoute: typeof PolitikaKolacicaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/o-nama': {
+      id: '/o-nama'
+      path: '/o-nama'
+      fullPath: '/o-nama'
+      preLoaderRoute: typeof ONamaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/kontakt': {
+      id: '/kontakt'
+      path: '/kontakt'
+      fullPath: '/kontakt'
+      preLoaderRoute: typeof KontaktRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -53,17 +197,14 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  KontaktRoute: KontaktRoute,
+  ONamaRoute: ONamaRoute,
+  PolitikaKolacicaRoute: PolitikaKolacicaRoute,
+  PolitikaPrivatnostiRoute: PolitikaPrivatnostiRoute,
+  ZastitaNaRaduRoute: ZastitaNaRaduRoute,
+  ZastitaOdPozaraRoute: ZastitaOdPozaraRoute,
+  ZastitaOkolisaRoute: ZastitaOkolisaRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
-
-import type { getRouter } from './router.tsx'
-import type { startInstance } from './start.ts'
-declare module '@tanstack/react-start' {
-  interface Register {
-    ssr: true
-    router: Awaited<ReturnType<typeof getRouter>>
-    config: Awaited<ReturnType<typeof startInstance.getOptions>>
-  }
-}
