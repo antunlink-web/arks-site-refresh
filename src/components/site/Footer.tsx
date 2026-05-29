@@ -1,56 +1,70 @@
 import { Link } from "@tanstack/react-router";
-import { ShieldCheck, MapPin, Phone, Smartphone, Mail, Clock, Printer } from "lucide-react";
+import { MapPin, Phone, Smartphone, Mail, Clock, Printer } from "lucide-react";
 
 export function Footer() {
   return (
-    <footer className="mt-24 border-t border-border bg-slate-surface">
-      <div className="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 lg:grid-cols-4 lg:px-8">
-        <div className="lg:col-span-2">
-          <div className="flex items-center gap-2.5">
-            <span className="grid h-9 w-9 place-items-center rounded-md bg-brand text-brand-foreground">
-              <ShieldCheck className="h-5 w-5" />
+    <footer className="mt-24 border-t border-brand-deep/40 bg-brand-deep text-white">
+      <div className="mx-auto grid max-w-7xl gap-12 px-4 py-16 sm:px-6 lg:grid-cols-12 lg:gap-10 lg:px-8">
+        {/* Brand block */}
+        <div className="lg:col-span-4">
+          <div className="flex items-center gap-3">
+            <span className="grid h-11 w-11 place-items-center rounded-sm bg-white/10 ring-1 ring-white/15">
+              <span className="font-display text-xl leading-none text-white">A</span>
             </span>
-            <span className="text-sm font-bold tracking-tight">
-              Agencija za razvoj i kontrolu sigurnosti d.o.o.
-            </span>
+            <div className="leading-tight">
+              <p className="font-display text-2xl text-white">ARKS</p>
+              <p className="text-[10.5px] uppercase tracking-[0.16em] text-white/55">d.o.o. Tenja, Osijek</p>
+            </div>
           </div>
-          <p className="mt-4 max-w-md text-sm leading-relaxed text-muted-foreground">
-            Stručna podrška za zaštitu na radu, zaštitu od požara i zaštitu okoliša. Pomažemo tvrtkama
-            u ispunjavanju zakonskih obveza i sigurnijem poslovanju.
+          <p className="mt-5 max-w-sm text-sm leading-relaxed text-white/65">
+            Agencija za razvoj i kontrolu sigurnosti. Stručna podrška za zaštitu na radu,
+            zaštitu od požara i zaštitu okoliša — već dugi niz godina uz hrvatske tvrtke.
           </p>
         </div>
 
-        <div>
-          <h4 className="text-sm font-semibold text-foreground">Kontakt</h4>
-          <ul className="mt-4 space-y-2.5 text-sm text-muted-foreground">
-            <li className="flex gap-2"><MapPin className="mt-0.5 h-4 w-4 shrink-0 text-brand" /> Osječka 163, Tenja, Osijek</li>
-            <li className="flex gap-2"><Phone className="mt-0.5 h-4 w-4 shrink-0 text-brand" /> +385 (0)31 275 257</li>
-            <li className="flex gap-2"><Smartphone className="mt-0.5 h-4 w-4 shrink-0 text-brand" /> +385 (0)98 980 1111</li>
-            <li className="flex gap-2"><Printer className="mt-0.5 h-4 w-4 shrink-0 text-brand" /> +385 (0)31 275 254</li>
-            <li className="flex gap-2"><Mail className="mt-0.5 h-4 w-4 shrink-0 text-brand" /> <a href="mailto:arks@arks.hr" className="hover:text-brand">arks@arks.hr</a></li>
-            <li className="flex gap-2"><Clock className="mt-0.5 h-4 w-4 shrink-0 text-brand" /> Pon – Pet 08:00 – 16:00</li>
+        {/* Kontakt */}
+        <div className="lg:col-span-3">
+          <h4 className="text-[11px] font-semibold uppercase tracking-[0.18em] text-white/55">Kontakt</h4>
+          <ul className="mt-5 space-y-3 text-sm text-white/80">
+            <li className="flex gap-2.5"><MapPin className="mt-0.5 h-4 w-4 shrink-0 text-safety" /> Osječka 163, Tenja, Osijek</li>
+            <li className="flex gap-2.5"><Phone className="mt-0.5 h-4 w-4 shrink-0 text-safety" /> <a href="tel:+38531275257" className="hover:text-white">+385 (0)31 275 257</a></li>
+            <li className="flex gap-2.5"><Smartphone className="mt-0.5 h-4 w-4 shrink-0 text-safety" /> <a href="tel:+385989801111" className="hover:text-white">+385 (0)98 980 1111</a></li>
+            <li className="flex gap-2.5"><Printer className="mt-0.5 h-4 w-4 shrink-0 text-safety" /> +385 (0)31 275 254</li>
+            <li className="flex gap-2.5"><Mail className="mt-0.5 h-4 w-4 shrink-0 text-safety" /> <a href="mailto:arks@arks.hr" className="hover:text-white">arks@arks.hr</a></li>
+            <li className="flex gap-2.5"><Clock className="mt-0.5 h-4 w-4 shrink-0 text-safety" /> Pon – Pet 08:00 – 16:00</li>
           </ul>
         </div>
 
-        <div>
-          <h4 className="text-sm font-semibold text-foreground">Usluge</h4>
-          <ul className="mt-4 space-y-2.5 text-sm text-muted-foreground">
-            <li><Link to="/zastita-na-radu" className="hover:text-brand">Zaštita na radu</Link></li>
-            <li><Link to="/zastita-od-pozara" className="hover:text-brand">Zaštita od požara</Link></li>
-            <li><Link to="/zastita-okolisa" className="hover:text-brand">Zaštita okoliša</Link></li>
-            <li><Link to="/o-nama" className="hover:text-brand">O nama</Link></li>
-            <li><Link to="/kontakt" className="hover:text-brand">Kontakt</Link></li>
+        {/* Usluge */}
+        <div className="lg:col-span-2">
+          <h4 className="text-[11px] font-semibold uppercase tracking-[0.18em] text-white/55">Usluge</h4>
+          <ul className="mt-5 space-y-3 text-sm text-white/80">
+            <li><Link to="/zastita-na-radu" className="hover:text-white">Zaštita na radu</Link></li>
+            <li><Link to="/zastita-od-pozara" className="hover:text-white">Zaštita od požara</Link></li>
+            <li><Link to="/zastita-okolisa" className="hover:text-white">Zaštita okoliša</Link></li>
+            <li><Link to="/o-nama" className="hover:text-white">O nama</Link></li>
+            <li><Link to="/kontakt" className="hover:text-white">Kontakt</Link></li>
           </ul>
+        </div>
+
+        {/* Pravne informacije */}
+        <div className="lg:col-span-3">
+          <h4 className="text-[11px] font-semibold uppercase tracking-[0.18em] text-white/55">Pravne informacije</h4>
+          <ul className="mt-5 space-y-3 text-sm text-white/80">
+            <li><Link to="/politika-privatnosti" className="hover:text-white">Politika privatnosti</Link></li>
+            <li><Link to="/politika-kolacica" className="hover:text-white">Politika kolačića</Link></li>
+          </ul>
+          <p className="mt-6 text-xs leading-relaxed text-white/55">
+            Agencija za razvoj i kontrolu sigurnosti d.o.o.<br />
+            Tvrtka registrirana u Republici Hrvatskoj.
+          </p>
         </div>
       </div>
 
-      <div className="border-t border-border">
-        <div className="mx-auto flex max-w-7xl flex-col items-start justify-between gap-3 px-4 py-5 text-xs text-muted-foreground sm:flex-row sm:items-center sm:px-6 lg:px-8">
+      <div className="border-t border-white/10">
+        <div className="mx-auto flex max-w-7xl flex-col items-start justify-between gap-3 px-4 py-5 text-xs text-white/55 sm:flex-row sm:items-center sm:px-6 lg:px-8">
           <p>© {new Date().getFullYear()} Agencija za razvoj i kontrolu sigurnosti d.o.o. Sva prava pridržana.</p>
-          <div className="flex gap-5">
-            <Link to="/politika-privatnosti" className="hover:text-brand">Politika privatnosti</Link>
-            <Link to="/politika-kolacica" className="hover:text-brand">Politika kolačića</Link>
-          </div>
+          <p className="uppercase tracking-[0.16em]">Sigurnost · Zaštita · Usklađenost</p>
         </div>
       </div>
     </footer>

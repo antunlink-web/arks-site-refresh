@@ -44,44 +44,43 @@ export function CookieBanner() {
 
   return (
     <>
-      <div className="fixed inset-x-0 bottom-0 z-50 px-3 pb-3 sm:px-4 sm:pb-4">
-        <div className="mx-auto max-w-5xl rounded-xl border border-border bg-background p-4 shadow-2xl sm:p-5">
-          <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
-            <p className="text-sm leading-relaxed text-foreground/80">
-              Koristimo kolačiće kako bismo osigurali ispravan rad stranice i poboljšali korisničko iskustvo.{" "}
-              <a href="/politika-kolacica" className="font-medium text-brand underline-offset-2 hover:underline">
-                Saznajte više
-              </a>
-            </p>
-            <div className="flex flex-wrap gap-2">
-              <button
-                onClick={() => setSettingsOpen(true)}
-                className="rounded-md border border-border bg-background px-4 py-2 text-sm font-medium text-foreground hover:bg-secondary"
-              >
-                Postavke
-              </button>
-              <button
-                onClick={() => save({ analytics: false, marketing: false })}
-                className="rounded-md border border-border bg-background px-4 py-2 text-sm font-medium text-foreground hover:bg-secondary"
-              >
-                Odbij neobavezne
-              </button>
-              <button
-                onClick={() => save({ analytics: true, marketing: true })}
-                className="rounded-md bg-brand px-4 py-2 text-sm font-semibold text-brand-foreground hover:opacity-90"
-              >
-                Prihvati sve
-              </button>
-            </div>
+      <div className="fixed inset-x-0 bottom-0 z-50 px-3 pb-3 sm:bottom-4 sm:left-4 sm:right-auto sm:px-0 sm:pb-0">
+        <div className="mx-auto max-w-md rounded-sm border border-border bg-background p-4 shadow-lg">
+          <p className="text-[13px] leading-relaxed text-foreground/80">
+            Ova stranica koristi kolačiće za ispravan rad i analizu posjećenosti.
+            Više informacija u{" "}
+            <a href="/politika-kolacica" className="font-medium text-brand underline-offset-2 hover:underline">politici kolačića</a>
+            {" "}i{" "}
+            <a href="/politika-privatnosti" className="font-medium text-brand underline-offset-2 hover:underline">politici privatnosti</a>.
+          </p>
+          <div className="mt-3 flex flex-wrap gap-2">
+            <button
+              onClick={() => save({ analytics: true, marketing: true })}
+              className="rounded-sm bg-brand px-3.5 py-1.5 text-[12.5px] font-semibold text-brand-foreground hover:bg-brand-deep"
+            >
+              Prihvati sve
+            </button>
+            <button
+              onClick={() => save({ analytics: false, marketing: false })}
+              className="rounded-sm border border-border bg-background px-3.5 py-1.5 text-[12.5px] font-medium text-foreground hover:bg-secondary"
+            >
+              Odbij neobavezne
+            </button>
+            <button
+              onClick={() => setSettingsOpen(true)}
+              className="rounded-sm px-2 py-1.5 text-[12.5px] font-medium text-foreground/70 hover:text-foreground"
+            >
+              Postavke
+            </button>
           </div>
         </div>
       </div>
 
       {settingsOpen && (
         <div className="fixed inset-0 z-50 grid place-items-center bg-black/50 p-4">
-          <div className="w-full max-w-lg rounded-xl bg-background p-6 shadow-2xl">
+          <div className="w-full max-w-lg rounded-sm bg-background p-6 shadow-2xl">
             <div className="flex items-start justify-between">
-              <h3 className="text-lg font-bold">Postavke kolačića</h3>
+              <h3 className="font-display text-xl">Postavke kolačića</h3>
               <button onClick={() => setSettingsOpen(false)} aria-label="Zatvori" className="text-muted-foreground hover:text-foreground">
                 <X className="h-5 w-5" />
               </button>
@@ -99,13 +98,13 @@ export function CookieBanner() {
             <div className="mt-6 flex flex-wrap justify-end gap-2">
               <button
                 onClick={() => save({ analytics: false, marketing: false })}
-                className="rounded-md border border-border px-4 py-2 text-sm font-medium hover:bg-secondary"
+                className="rounded-sm border border-border px-4 py-2 text-sm font-medium hover:bg-secondary"
               >
                 Odbij neobavezne
               </button>
               <button
                 onClick={() => save({ analytics, marketing })}
-                className="rounded-md bg-brand px-4 py-2 text-sm font-semibold text-brand-foreground hover:opacity-90"
+                className="rounded-sm bg-brand px-4 py-2 text-sm font-semibold text-brand-foreground hover:bg-brand-deep"
               >
                 Spremi postavke
               </button>
@@ -121,7 +120,7 @@ function Row({
   title, desc, checked, onChange, disabled,
 }: { title: string; desc: string; checked: boolean; onChange?: (v: boolean) => void; disabled?: boolean }) {
   return (
-    <label className={`flex items-start justify-between gap-4 rounded-lg border border-border p-4 ${disabled ? "bg-secondary/60" : ""}`}>
+    <label className={`flex items-start justify-between gap-4 rounded-sm border border-border p-4 ${disabled ? "bg-secondary/60" : ""}`}>
       <span>
         <span className="block text-sm font-semibold text-foreground">{title}</span>
         <span className="mt-0.5 block text-xs text-muted-foreground">{desc}</span>
@@ -131,7 +130,7 @@ function Row({
         checked={checked}
         disabled={disabled}
         onChange={(e) => onChange?.(e.target.checked)}
-        className="mt-1 h-5 w-5 accent-[oklch(0.31_0.09_260)]"
+        className="mt-1 h-5 w-5 accent-[oklch(0.24_0.07_260)]"
       />
     </label>
   );
