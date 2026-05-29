@@ -96,25 +96,26 @@ function Home() {
               <span>Od 1998. — Agencija za razvoj i kontrolu sigurnosti</span>
             </div>
 
-            <h1 className="mt-7 font-display text-[2.6rem] leading-[1.05] tracking-tight text-foreground sm:text-6xl lg:text-[4.25rem]">
-              Pouzdana podrška za <em className="italic text-brand">sigurnost</em>, zaštitu na radu i usklađenost poslovanja.
+            <h1 className="mt-7 font-display text-[2.5rem] leading-[1.08] tracking-tight text-foreground sm:text-[3.4rem] lg:text-[3.9rem]">
+              Pouzdana podrška za <em className="italic text-brand">sigurnost</em>,<br className="hidden sm:block" />
+              zaštitu na radu i usklađenost poslovanja.
             </h1>
 
-            <p className="mt-7 max-w-2xl text-[15.5px] leading-[1.7] text-foreground/70 sm:text-[17px]">
-              Pomažemo hrvatskim tvrtkama u području zaštite na radu, zaštite od požara i zaštite okoliša —
-              jasno, stručno i u skladu sa zakonskim obvezama.
+            <p className="mt-7 max-w-2xl text-[16.5px] leading-[1.75] text-foreground/75 sm:text-[18px]">
+              Pomažemo hrvatskim tvrtkama u području zaštite na radu, zaštite od požara
+              i zaštite okoliša — jasno, stručno i u skladu sa zakonskim obvezama.
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-3">
               <Link
                 to="/kontakt"
-                className="inline-flex items-center gap-2 rounded-sm bg-brand px-6 py-3.5 text-[13px] font-semibold uppercase tracking-wider text-brand-foreground transition-colors hover:bg-brand-deep"
+                className="inline-flex items-center gap-2 rounded-sm bg-brand px-7 py-4 text-[13.5px] font-semibold uppercase tracking-[0.12em] text-brand-foreground shadow-sm transition-colors hover:bg-brand-deep"
               >
                 Zatražite ponudu <ArrowRight className="h-4 w-4" />
               </Link>
               <a
                 href="tel:+38531275257"
-                className="inline-flex items-center gap-2 rounded-sm border border-brand/25 bg-transparent px-6 py-3.5 text-[13px] font-semibold uppercase tracking-wider text-brand transition-colors hover:bg-brand/5"
+                className="inline-flex items-center gap-2 rounded-sm border border-brand/30 bg-background px-7 py-4 text-[13.5px] font-semibold uppercase tracking-[0.12em] text-brand transition-colors hover:bg-brand/5"
               >
                 <Phone className="h-4 w-4" /> +385 (0)31 275 257
               </a>
