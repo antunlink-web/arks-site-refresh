@@ -1,5 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { MapPin, Phone, Smartphone, Mail, Clock, Printer } from "lucide-react";
+import arksLogo from "@/assets/arks-logo.png";
 
 export function Footer() {
   return (
@@ -7,14 +8,12 @@ export function Footer() {
       <div className="mx-auto grid max-w-7xl gap-12 px-4 py-16 sm:px-6 lg:grid-cols-12 lg:gap-10 lg:px-8">
         {/* Brand block */}
         <div className="lg:col-span-4">
-          <div className="flex items-center gap-3">
-            <span className="grid h-11 w-11 place-items-center rounded-sm bg-white/10 ring-1 ring-white/15">
-              <span className="font-display text-xl leading-none text-white">A</span>
-            </span>
-            <div className="leading-tight">
-              <p className="font-display text-2xl text-white">ARKS</p>
-              <p className="text-[10.5px] uppercase tracking-[0.16em] text-white/55">d.o.o. Tenja, Osijek</p>
-            </div>
+          <div className="inline-flex items-center rounded-sm bg-white px-4 py-3 ring-1 ring-white/15">
+            <img
+              src={arksLogo}
+              alt="ARKS — Agencija za razvoj i kontrolu sigurnosti d.o.o."
+              className="h-12 w-auto"
+            />
           </div>
           <p className="mt-5 max-w-sm text-sm leading-relaxed text-white/65">
             Agencija za razvoj i kontrolu sigurnosti. Stručna podrška za zaštitu na radu,
