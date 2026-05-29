@@ -348,13 +348,13 @@ function Home() {
             <div className="flex flex-wrap gap-3">
               <Link
                 to="/kontakt"
-                className="inline-flex items-center gap-2 rounded-sm bg-brand px-6 py-3.5 text-[13px] font-semibold uppercase tracking-wider text-brand-foreground hover:bg-brand-deep"
+                className="inline-flex items-center gap-2 rounded-sm bg-brand px-7 py-4 text-[13.5px] font-semibold uppercase tracking-[0.12em] text-brand-foreground shadow-sm hover:bg-brand-deep"
               >
                 <Mail className="h-4 w-4" /> Pošaljite upit
               </Link>
               <a
                 href="tel:+38531275257"
-                className="inline-flex items-center gap-2 rounded-sm border border-brand/30 bg-background px-6 py-3.5 text-[13px] font-semibold uppercase tracking-wider text-brand hover:bg-brand/5"
+                className="inline-flex items-center gap-2 rounded-sm border border-brand/30 bg-background px-7 py-4 text-[13.5px] font-semibold uppercase tracking-[0.12em] text-brand hover:bg-brand/5"
               >
                 <Phone className="h-4 w-4" /> Nazovite nas
               </a>
