@@ -299,17 +299,17 @@ function Home() {
                 Stručnost, povjerenje i jasna komunikacija.
               </h2>
             </div>
-            <p className="max-w-md text-sm leading-relaxed text-white/70">
+            <p className="max-w-md text-[14.5px] leading-relaxed text-white/80">
               Naš pristup počiva na stručnosti, dosljednosti i razumijevanju stvarnih
               poslovnih obveza koje propisi nameću hrvatskim tvrtkama.
             </p>
           </div>
 
-          <div className="mt-14 grid grid-cols-1 gap-px overflow-hidden border border-white/10 bg-white/10 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-14 grid grid-cols-1 gap-px overflow-hidden border border-white/15 bg-white/15 sm:grid-cols-2 lg:grid-cols-4">
             {why.map((w, i) => (
               <div key={w.title} className="flex flex-col bg-brand-deep p-7">
                 <div className="flex items-center justify-between">
-                  <span className="num text-[11px] font-semibold uppercase tracking-[0.18em] text-white/45">
+                  <span className="num text-[11px] font-semibold uppercase tracking-[0.18em] text-white/55">
                     0{i + 1}
                   </span>
                   <w.icon className="h-5 w-5 text-safety" />
@@ -317,7 +317,7 @@ function Home() {
                 <h3 className="mt-6 font-display text-lg leading-tight tracking-tight text-white">
                   {w.title}
                 </h3>
-                <p className="mt-3 text-[13.5px] leading-relaxed text-white/65">{w.desc}</p>
+                <p className="mt-3 text-[14px] leading-relaxed text-white/80">{w.desc}</p>
               </div>
             ))}
           </div>
