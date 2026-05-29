@@ -1,5 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { MapPin, Phone, Smartphone, Mail, Clock, Printer } from "lucide-react";
+import arksLogo from "@/assets/arks-logo.png";
 
 export function Footer() {
   return (
