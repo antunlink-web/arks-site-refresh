@@ -82,13 +82,15 @@ function Kontakt() {
 
           <div className="mt-8 overflow-hidden rounded-xl border border-border">
             <iframe
-              title="Karta — Osječka 163, Tenja"
-              src="https://www.openstreetmap.org/export/embed.html?bbox=18.7400%2C45.5200%2C18.7800%2C45.5450&amp;layer=mapnik&amp;marker=45.5325%2C18.7600"
+              title="Karta — Osječka 163, Tenja, Osijek"
+              src={`https://www.google.com/maps/embed/v1/place?key=${import.meta.env.VITE_LOVABLE_CONNECTOR_GOOGLE_MAPS_BROWSER_KEY}&q=Osje%C4%8Dka+163%2C+Tenja%2C+Osijek%2C+Croatia&center=45.5184243%2C18.7290797&zoom=16`}
               className="h-64 w-full"
               loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              allowFullScreen
             />
             <a
-              href="https://www.openstreetmap.org/?mlat=45.5325&mlon=18.7600#map=15/45.5325/18.7600"
+              href="https://www.google.com/maps/search/?api=1&query=Osje%C4%8Dka+163%2C+Tenja%2C+Osijek%2C+Croatia"
               target="_blank" rel="noreferrer"
               className="block bg-slate-surface px-4 py-2.5 text-center text-xs font-medium text-brand hover:underline"
             >
