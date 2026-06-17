@@ -92,8 +92,8 @@
   }
   h1, h2, h3, h4 {
     font-family: var(--font-display);
-    letter-spacing: -0.015em;
-    font-weight: 400;
+    letter-spacing: -0.01em;
+    font-weight: 700;
   }
   .font-display { font-family: var(--font-display); }
   .num { font-variant-numeric: tabular-nums; letter-spacing: 0.02em; }
