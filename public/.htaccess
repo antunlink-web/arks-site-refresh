@@ -1,27 +1,18 @@
-# ARKS — Apache konfiguracija za statičko hostanje (Plesk / Apache)
-# SPA fallback: sve nepostojeće rute preusmjeri na index.html
-# tako da TanStack Router preuzme rutiranje na klijentu.
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  RewriteRule ^index\.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule . /index.html [L]
+</IfModule>
 
-Options -MultiViews
-RewriteEngine On
-
-# Ne diraj postojeće datoteke i direktorije
-RewriteCond %{REQUEST_FILENAME} -f [OR]
-RewriteCond %{REQUEST_FILENAME} -d
-RewriteRule ^ - [L]
-
-# Sve ostalo -> index.html
-RewriteRule ^ index.html [L]
-
-# ---- Sigurnosna zaglavlja ----
 <IfModule mod_headers.c>
   Header set X-Content-Type-Options "nosniff"
   Header set X-Frame-Options "SAMEORIGIN"
   Header set Referrer-Policy "strict-origin-when-cross-origin"
-  Header set Permissions-Policy "geolocation=(), microphone=(), camera=()"
 </IfModule>
 
-# ---- Cache ----
 <IfModule mod_expires.c>
   ExpiresActive On
   ExpiresByType text/html                 "access plus 0 seconds"
@@ -34,7 +25,6 @@ RewriteRule ^ index.html [L]
   ExpiresByType font/woff2                "access plus 1 year"
 </IfModule>
 
-# ---- Kompresija ----
 <IfModule mod_deflate.c>
   AddOutputFilterByType DEFLATE text/html text/css application/javascript application/json image/svg+xml
 </IfModule>

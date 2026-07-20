@@ -5,10 +5,8 @@ import {
   createRootRouteWithContext,
   useRouter,
   HeadContent,
-  Scripts,
 } from "@tanstack/react-router";
 
-import appCss from "../styles.css?url";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { CookieBanner } from "@/components/site/CookieBanner";
@@ -67,52 +65,20 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
   head: () => ({
     meta: [
-      { charSet: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "ARKS d.o.o. — Zaštita na radu, zaštita od požara i zaštita okoliša" },
       { name: "description", content: "Agencija za razvoj i kontrolu sigurnosti d.o.o. — stručna podrška za zaštitu na radu, zaštitu od požara i zaštitu okoliša. Tenja, Osijek." },
-      { property: "og:title", content: "ARKS d.o.o. — Zaštita na radu, zaštita od požara i zaštita okoliša" },
-      { property: "og:description", content: "Agencija za razvoj i kontrolu sigurnosti d.o.o. — stručna podrška za zaštitu na radu, zaštitu od požara i zaštitu okoliša. Tenja, Osijek." },
-      { property: "og:type", content: "website" },
-      { property: "og:site_name", content: "ARKS d.o.o." },
-      { name: "theme-color", content: "#1e2a5a" },
-      { name: "twitter:title", content: "ARKS d.o.o. — Zaštita na radu, zaštita od požara i zaštita okoliša" },
-      { name: "twitter:description", content: "Agencija za razvoj i kontrolu sigurnosti d.o.o. — stručna podrška za zaštitu na radu, zaštitu od požara i zaštitu okoliša. Tenja, Osijek." },
-      { name: "twitter:card", content: "summary_large_image" },
-    ],
-    links: [
-      { rel: "preconnect", href: "https://fonts.googleapis.com" },
-      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
-      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" },
-      { rel: "stylesheet", href: appCss },
-      { rel: "icon", type: "image/png", href: "/favicon.png" },
-      { rel: "apple-touch-icon", href: "/favicon.png" },
     ],
   }),
-  shellComponent: RootShell,
   component: RootComponent,
   notFoundComponent: NotFoundComponent,
   errorComponent: ErrorComponent,
 });
 
-function RootShell({ children }: { children: React.ReactNode }) {
-  return (
-    <html lang="hr">
-      <head>
-        <HeadContent />
-      </head>
-      <body>
-        {children}
-        <Scripts />
-      </body>
-    </html>
-  );
-}
-
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();
   return (
     <QueryClientProvider client={queryClient}>
+      <HeadContent />
       <div className="flex min-h-screen flex-col bg-background">
         <Header />
         <main className="flex-1">
