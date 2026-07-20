@@ -97,7 +97,7 @@ function Home() {
             </div>
 
             <h1 className="mt-7 font-display text-[2.5rem] leading-[1.08] tracking-tight text-foreground sm:text-[3.4rem] lg:text-[3.9rem]">
-              Pouzdana podrška za <em className="italic text-brand">sigurnost</em>,<br className="hidden sm:block" />
+              Pouzdana podrška za <em className="italic text-brand">sigurnost</em>,<br />
               zaštitu na radu i usklađenost poslovanja.
             </h1>
 
