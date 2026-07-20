@@ -47,12 +47,12 @@ export function Header() {
           scrolled ? "border-border bg-background/95 shadow-[0_1px_0_0_rgba(0,0,0,0.02)] backdrop-blur" : "border-border/60 bg-background"
         }`}
       >
-        <div className="mx-auto flex h-20 max-w-7xl items-center justify-between gap-8 px-4 sm:px-6 lg:h-24 lg:px-8">
+        <div className="mx-auto flex h-24 max-w-7xl items-center justify-between gap-8 px-4 sm:px-6 lg:h-28 lg:px-8">
           <Link to="/" className="flex items-center" onClick={() => setOpen(false)} aria-label="ARKS — naslovnica">
             <img
               src={arksLogo}
               alt="ARKS — Agencija za razvoj i kontrolu sigurnosti d.o.o."
-              className="h-12 w-auto lg:h-14"
+              className="h-16 w-auto lg:h-20"
             />
           </Link>
 
