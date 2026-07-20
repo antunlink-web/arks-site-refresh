@@ -9,43 +9,18 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as ZastitaOkolisaRouteImport } from './routes/zastita-okolisa'
-import { Route as ZastitaOdPozaraRouteImport } from './routes/zastita-od-pozara'
-import { Route as ZastitaNaRaduRouteImport } from './routes/zastita-na-radu'
-import { Route as PolitikaPrivatnostiRouteImport } from './routes/politika-privatnosti'
-import { Route as PolitikaKolacicaRouteImport } from './routes/politika-kolacica'
-import { Route as ONamaRouteImport } from './routes/o-nama'
-import { Route as KontaktRouteImport } from './routes/kontakt'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as KontaktRouteImport } from './routes/kontakt'
+import { Route as ONamaRouteImport } from './routes/o-nama'
+import { Route as PolitikaKolacicaRouteImport } from './routes/politika-kolacica'
+import { Route as PolitikaPrivatnostiRouteImport } from './routes/politika-privatnosti'
+import { Route as ZastitaNaRaduRouteImport } from './routes/zastita-na-radu'
+import { Route as ZastitaOdPozaraRouteImport } from './routes/zastita-od-pozara'
+import { Route as ZastitaOkolisaRouteImport } from './routes/zastita-okolisa'
 
-const ZastitaOkolisaRoute = ZastitaOkolisaRouteImport.update({
-  id: '/zastita-okolisa',
-  path: '/zastita-okolisa',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ZastitaOdPozaraRoute = ZastitaOdPozaraRouteImport.update({
-  id: '/zastita-od-pozara',
-  path: '/zastita-od-pozara',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ZastitaNaRaduRoute = ZastitaNaRaduRouteImport.update({
-  id: '/zastita-na-radu',
-  path: '/zastita-na-radu',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const PolitikaPrivatnostiRoute = PolitikaPrivatnostiRouteImport.update({
-  id: '/politika-privatnosti',
-  path: '/politika-privatnosti',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const PolitikaKolacicaRoute = PolitikaKolacicaRouteImport.update({
-  id: '/politika-kolacica',
-  path: '/politika-kolacica',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ONamaRoute = ONamaRouteImport.update({
-  id: '/o-nama',
-  path: '/o-nama',
+const IndexRoute = IndexRouteImport.update({
+  id: '/',
+  path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
 const KontaktRoute = KontaktRouteImport.update({
@@ -53,9 +28,34 @@ const KontaktRoute = KontaktRouteImport.update({
   path: '/kontakt',
   getParentRoute: () => rootRouteImport,
 } as any)
-const IndexRoute = IndexRouteImport.update({
-  id: '/',
-  path: '/',
+const ONamaRoute = ONamaRouteImport.update({
+  id: '/o-nama',
+  path: '/o-nama',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PolitikaKolacicaRoute = PolitikaKolacicaRouteImport.update({
+  id: '/politika-kolacica',
+  path: '/politika-kolacica',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PolitikaPrivatnostiRoute = PolitikaPrivatnostiRouteImport.update({
+  id: '/politika-privatnosti',
+  path: '/politika-privatnosti',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ZastitaNaRaduRoute = ZastitaNaRaduRouteImport.update({
+  id: '/zastita-na-radu',
+  path: '/zastita-na-radu',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ZastitaOdPozaraRoute = ZastitaOdPozaraRouteImport.update({
+  id: '/zastita-od-pozara',
+  path: '/zastita-od-pozara',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ZastitaOkolisaRoute = ZastitaOkolisaRouteImport.update({
+  id: '/zastita-okolisa',
+  path: '/zastita-okolisa',
   getParentRoute: () => rootRouteImport,
 } as any)
 
@@ -136,46 +136,11 @@ export interface RootRouteChildren {
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/zastita-okolisa': {
-      id: '/zastita-okolisa'
-      path: '/zastita-okolisa'
-      fullPath: '/zastita-okolisa'
-      preLoaderRoute: typeof ZastitaOkolisaRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/zastita-od-pozara': {
-      id: '/zastita-od-pozara'
-      path: '/zastita-od-pozara'
-      fullPath: '/zastita-od-pozara'
-      preLoaderRoute: typeof ZastitaOdPozaraRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/zastita-na-radu': {
-      id: '/zastita-na-radu'
-      path: '/zastita-na-radu'
-      fullPath: '/zastita-na-radu'
-      preLoaderRoute: typeof ZastitaNaRaduRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/politika-privatnosti': {
-      id: '/politika-privatnosti'
-      path: '/politika-privatnosti'
-      fullPath: '/politika-privatnosti'
-      preLoaderRoute: typeof PolitikaPrivatnostiRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/politika-kolacica': {
-      id: '/politika-kolacica'
-      path: '/politika-kolacica'
-      fullPath: '/politika-kolacica'
-      preLoaderRoute: typeof PolitikaKolacicaRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/o-nama': {
-      id: '/o-nama'
-      path: '/o-nama'
-      fullPath: '/o-nama'
-      preLoaderRoute: typeof ONamaRouteImport
+    '/': {
+      id: '/'
+      path: '/'
+      fullPath: '/'
+      preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/kontakt': {
@@ -185,11 +150,46 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof KontaktRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/': {
-      id: '/'
-      path: '/'
-      fullPath: '/'
-      preLoaderRoute: typeof IndexRouteImport
+    '/o-nama': {
+      id: '/o-nama'
+      path: '/o-nama'
+      fullPath: '/o-nama'
+      preLoaderRoute: typeof ONamaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/politika-kolacica': {
+      id: '/politika-kolacica'
+      path: '/politika-kolacica'
+      fullPath: '/politika-kolacica'
+      preLoaderRoute: typeof PolitikaKolacicaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/politika-privatnosti': {
+      id: '/politika-privatnosti'
+      path: '/politika-privatnosti'
+      fullPath: '/politika-privatnosti'
+      preLoaderRoute: typeof PolitikaPrivatnostiRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/zastita-na-radu': {
+      id: '/zastita-na-radu'
+      path: '/zastita-na-radu'
+      fullPath: '/zastita-na-radu'
+      preLoaderRoute: typeof ZastitaNaRaduRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/zastita-od-pozara': {
+      id: '/zastita-od-pozara'
+      path: '/zastita-od-pozara'
+      fullPath: '/zastita-od-pozara'
+      preLoaderRoute: typeof ZastitaOdPozaraRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/zastita-okolisa': {
+      id: '/zastita-okolisa'
+      path: '/zastita-okolisa'
+      fullPath: '/zastita-okolisa'
+      preLoaderRoute: typeof ZastitaOkolisaRouteImport
       parentRoute: typeof rootRouteImport
     }
   }
