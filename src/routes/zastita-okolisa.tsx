@@ -5,13 +5,16 @@ import { ServicePage } from "./zastita-na-radu";
 export const Route = createFileRoute("/zastita-okolisa")({
   head: () => ({
     meta: [
-      { title: "Zaštita okoliša — ARKS d.o.o." },
-      { name: "description", content: "Usluge zaštite okoliša: savjetovanje, vođenje propisanih evidencija i podrška u ispunjavanju ekoloških obveza." },
-      { property: "og:title", content: "Zaštita okoliša — ARKS d.o.o." },
-      { property: "og:description", content: "Savjetovanje i evidencije iz područja zaštite okoliša." },
-      { property: "og:url", content: "/zastita-okolisa" },
+      { title: "Zaštita okoliša - ARKS" },
+      { name: "description", content: "Savjetovanje, dokumentacija, evidencije i podrška klijentima u ispunjavanju obveza iz područja zaštite okoliša." },
+      { property: "og:title", content: "Zaštita okoliša - ARKS" },
+      { property: "og:description", content: "Savjetovanje, dokumentacija, evidencije i podrška klijentima u ispunjavanju obveza iz područja zaštite okoliša." },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://arks.hr/zastita-okolisa" },
+      { property: "og:image", content: "https://arks.hr/og-image.png" },
+      { property: "og:locale", content: "hr_HR" },
     ],
-    links: [{ rel: "canonical", href: "/zastita-okolisa" }],
+    links: [{ rel: "canonical", href: "https://arks.hr/zastita-okolisa" }],
   }),
   component: () => (
     <ServicePage

@@ -5,13 +5,16 @@ import { CheckCircle2, HardHat } from "lucide-react";
 export const Route = createFileRoute("/zastita-na-radu")({
   head: () => ({
     meta: [
-      { title: "Zaštita na radu — ARKS d.o.o." },
-      { name: "description", content: "Usluge zaštite na radu: procjena rizika, osposobljavanje radnika i izrada propisane dokumentacije." },
-      { property: "og:title", content: "Zaštita na radu — ARKS d.o.o." },
-      { property: "og:description", content: "Procjena rizika, osposobljavanje i dokumentacija iz područja ZNR." },
-      { property: "og:url", content: "/zastita-na-radu" },
+      { title: "Zaštita na radu - ARKS" },
+      { name: "description", content: "Stručna podrška za zaštitu na radu, procjene rizika, dokumentaciju, osposobljavanja i savjetovanje za poslovne subjekte." },
+      { property: "og:title", content: "Zaštita na radu - ARKS" },
+      { property: "og:description", content: "Stručna podrška za zaštitu na radu, procjene rizika, dokumentaciju, osposobljavanja i savjetovanje za poslovne subjekte." },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://arks.hr/zastita-na-radu" },
+      { property: "og:image", content: "https://arks.hr/og-image.png" },
+      { property: "og:locale", content: "hr_HR" },
     ],
-    links: [{ rel: "canonical", href: "/zastita-na-radu" }],
+    links: [{ rel: "canonical", href: "https://arks.hr/zastita-na-radu" }],
   }),
   component: () => (
     <ServicePage

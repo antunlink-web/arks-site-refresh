@@ -5,13 +5,16 @@ import { ServicePage } from "./zastita-na-radu";
 export const Route = createFileRoute("/zastita-od-pozara")({
   head: () => ({
     meta: [
-      { title: "Zaštita od požara — ARKS d.o.o." },
-      { name: "description", content: "Usluge zaštite od požara: planovi, procjene, osposobljavanje i pregledi u poslovnim objektima." },
-      { property: "og:title", content: "Zaštita od požara — ARKS d.o.o." },
-      { property: "og:description", content: "Planovi, procjene i izobrazba iz područja ZOP-a." },
-      { property: "og:url", content: "/zastita-od-pozara" },
+      { title: "Zaštita od požara - ARKS" },
+      { name: "description", content: "Izrada planova i procjena zaštite od požara, pregledi, savjetovanje i pomoć pri ispunjavanju zakonskih obveza iz ZOP-a." },
+      { property: "og:title", content: "Zaštita od požara - ARKS" },
+      { property: "og:description", content: "Izrada planova i procjena zaštite od požara, pregledi, savjetovanje i pomoć pri ispunjavanju zakonskih obveza iz ZOP-a." },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://arks.hr/zastita-od-pozara" },
+      { property: "og:image", content: "https://arks.hr/og-image.png" },
+      { property: "og:locale", content: "hr_HR" },
     ],
-    links: [{ rel: "canonical", href: "/zastita-od-pozara" }],
+    links: [{ rel: "canonical", href: "https://arks.hr/zastita-od-pozara" }],
   }),
   component: () => (
     <ServicePage

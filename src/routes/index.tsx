@@ -20,13 +20,16 @@ import heroImg from "@/assets/hero-safety.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "ARKS d.o.o. — Zaštita na radu, zaštita od požara i zaštita okoliša | Osijek" },
-      { name: "description", content: "Agencija za razvoj i kontrolu sigurnosti — stručna podrška za zaštitu na radu, zaštitu od požara i zaštitu okoliša. Dokumentacija, osposobljavanja, pregledi." },
-      { property: "og:title", content: "ARKS d.o.o. — Pouzdana podrška za sigurnost i usklađenost poslovanja" },
-      { property: "og:description", content: "Pomažemo tvrtkama u području zaštite na radu, zaštite od požara i zaštite okoliša — jasno, stručno i u skladu sa zakonskim obvezama." },
-      { property: "og:url", content: "/" },
+      { title: "ARKS - Zaštita na radu, zaštita od požara i zaštita okoliša" },
+      { name: "description", content: "Agencija za razvoj i kontrolu sigurnosti d.o.o. pruža stručnu podršku iz područja zaštite na radu, zaštite od požara i zaštite okoliša." },
+      { property: "og:title", content: "ARKS - Zaštita na radu, zaštita od požara i zaštita okoliša" },
+      { property: "og:description", content: "Agencija za razvoj i kontrolu sigurnosti d.o.o. pruža stručnu podršku iz područja zaštite na radu, zaštite od požara i zaštite okoliša." },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://arks.hr/" },
+      { property: "og:image", content: "https://arks.hr/og-image.png" },
+      { property: "og:locale", content: "hr_HR" },
     ],
-    links: [{ rel: "canonical", href: "/" }],
+    links: [{ rel: "canonical", href: "https://arks.hr/" }],
   }),
   component: Home,
 });

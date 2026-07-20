@@ -5,13 +5,16 @@ import arksLogo from "@/assets/arks-logo.png";
 export const Route = createFileRoute("/o-nama")({
   head: () => ({
     meta: [
-      { title: "O nama — ARKS d.o.o." },
-      { name: "description", content: "Agencija za razvoj i kontrolu sigurnosti d.o.o. — tvrtka specijalizirana za zaštitu na radu, zaštitu od požara i zaštitu okoliša." },
-      { property: "og:title", content: "O nama — ARKS d.o.o." },
-      { property: "og:description", content: "Saznajte više o tvrtki ARKS d.o.o. i području našeg djelovanja." },
-      { property: "og:url", content: "/o-nama" },
+      { title: "O nama - ARKS" },
+      { name: "description", content: "ARKS je tvrtka sa sjedištem u Tenji - Osijeka, specijalizirana za zaštitu na radu, zaštitu od požara i zaštitu okoliša." },
+      { property: "og:title", content: "O nama - ARKS" },
+      { property: "og:description", content: "ARKS je tvrtka sa sjedištem u Tenji - Osijeka, specijalizirana za zaštitu na radu, zaštitu od požara i zaštitu okoliša." },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://arks.hr/o-nama" },
+      { property: "og:image", content: "https://arks.hr/og-image.png" },
+      { property: "og:locale", content: "hr_HR" },
     ],
-    links: [{ rel: "canonical", href: "/o-nama" }],
+    links: [{ rel: "canonical", href: "https://arks.hr/o-nama" }],
   }),
   component: ONama,
 });
