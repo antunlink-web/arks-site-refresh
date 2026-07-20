@@ -78,8 +78,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "theme-color", content: "#1e2a5a" },
       { name: "twitter:title", content: "ARKS d.o.o. — Zaštita na radu, zaštita od požara i zaštita okoliša" },
       { name: "twitter:description", content: "Agencija za razvoj i kontrolu sigurnosti d.o.o. — stručna podrška za zaštitu na radu, zaštitu od požara i zaštitu okoliša. Tenja, Osijek." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/0c011f7e-12da-407d-87bf-13d16f24a59c/id-preview-2c621722--e7acadd6-438e-46e0-a376-afd30f014b6e.lovable.app-1780063767555.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/0c011f7e-12da-407d-87bf-13d16f24a59c/id-preview-2c621722--e7acadd6-438e-46e0-a376-afd30f014b6e.lovable.app-1780063767555.png" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
