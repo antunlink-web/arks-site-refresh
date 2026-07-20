@@ -44,31 +44,33 @@ export function CookieBanner() {
 
   return (
     <>
-      <div className="fixed inset-x-0 bottom-0 z-50 px-3 pb-3 sm:bottom-4 sm:left-4 sm:right-auto sm:px-0 sm:pb-0">
-        <div className="mx-auto max-w-md rounded-sm border border-border bg-background p-4 shadow-lg">
-          <p className="text-[13px] leading-relaxed text-foreground/80">
-            Ova stranica koristi kolačiće za ispravan rad i analizu posjećenosti.
-            Više informacija u{" "}
-            <a href="/politika-kolacica" className="font-medium text-brand underline-offset-2 hover:underline">politici kolačića</a>
-            {" "}i{" "}
-            <a href="/politika-privatnosti" className="font-medium text-brand underline-offset-2 hover:underline">politici privatnosti</a>.
+      <div
+        role="dialog"
+        aria-live="polite"
+        aria-label="Obavijest o kolačićima"
+        className="fixed inset-x-0 bottom-0 z-50 px-3 pb-3 sm:bottom-4 sm:left-4 sm:right-auto sm:px-0 sm:pb-0"
+      >
+        <div className="mx-auto max-w-sm rounded-md border border-border/70 bg-background/95 p-3.5 shadow-md backdrop-blur supports-[backdrop-filter]:bg-background/80">
+          <p className="text-[12.5px] leading-relaxed text-foreground/75">
+            Koristimo kolačiće za ispravan rad stranice i analizu posjećenosti. Nastavkom pregledavanja pristajete na njihovu upotrebu.{" "}
+            <a href="/politika-kolacica" className="font-medium text-brand underline-offset-2 hover:underline">Više informacija</a>.
           </p>
-          <div className="mt-3 flex flex-wrap gap-2">
+          <div className="mt-2.5 flex flex-wrap items-center gap-1.5">
             <button
               onClick={() => save({ analytics: true, marketing: true })}
-              className="rounded-sm bg-brand px-3.5 py-1.5 text-[12.5px] font-semibold text-brand-foreground hover:bg-brand-deep"
+              className="rounded-sm bg-brand px-3 py-1.5 text-[12px] font-semibold text-brand-foreground hover:bg-brand-deep"
             >
-              Prihvati sve
+              Prihvati
             </button>
             <button
               onClick={() => save({ analytics: false, marketing: false })}
-              className="rounded-sm border border-border bg-background px-3.5 py-1.5 text-[12.5px] font-medium text-foreground hover:bg-secondary"
+              className="rounded-sm px-2.5 py-1.5 text-[12px] font-medium text-foreground/70 hover:text-foreground"
             >
               Odbij neobavezne
             </button>
             <button
               onClick={() => setSettingsOpen(true)}
-              className="rounded-sm px-2 py-1.5 text-[12.5px] font-medium text-foreground/70 hover:text-foreground"
+              className="rounded-sm px-2 py-1.5 text-[12px] font-medium text-foreground/60 hover:text-foreground"
             >
               Postavke
             </button>
