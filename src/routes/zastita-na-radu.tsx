@@ -37,16 +37,16 @@ export function ServicePage({
   return (
     <>
       <PageHero eyebrow={eyebrow} title={title} lead={lead} />
-      <section className="mx-auto max-w-4xl px-4 py-16 sm:px-6 lg:px-8">
+      <section className="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="flex items-center gap-3">
           <span className="grid h-12 w-12 place-items-center rounded-lg bg-brand/10 text-brand">{icon}</span>
           <h2 className="text-xl font-bold">Što nudimo</h2>
         </div>
         <ul className="mt-6 grid gap-3 sm:grid-cols-2">
           {points.map((p) => (
-            <li key={p} className="flex items-start gap-2.5 rounded-lg border border-border bg-card p-4 text-sm text-foreground/85">
+            <li key={p} className="flex items-start gap-2.5 rounded-lg border border-border bg-card p-4 text-[13.5px] leading-snug text-foreground/85">
               <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-safety" />
-              <span>{p}</span>
+              <span className="whitespace-nowrap sm:whitespace-normal lg:whitespace-nowrap">{p}</span>
             </li>
           ))}
         </ul>
