@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://arks.primelink.com.hr/sitemap.xml
+Sitemap: https://arks.hr/sitemap.xml

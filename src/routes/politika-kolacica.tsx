@@ -4,12 +4,16 @@ import { PageHero } from "@/components/site/PageHero";
 export const Route = createFileRoute("/politika-kolacica")({
   head: () => ({
     meta: [
-      { title: "Politika kolačića — ARKS d.o.o." },
+      { title: "Politika kolačića - ARKS" },
       { name: "description", content: "Politika kolačića tvrtke Agencija za razvoj i kontrolu sigurnosti d.o.o." },
-      { property: "og:title", content: "Politika kolačića — ARKS d.o.o." },
-      { property: "og:url", content: "/politika-kolacica" },
+      { property: "og:title", content: "Politika kolačića - ARKS" },
+      { property: "og:description", content: "Politika kolačića tvrtke Agencija za razvoj i kontrolu sigurnosti d.o.o." },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://arks.hr/politika-kolacica" },
+      { property: "og:image", content: "https://arks.hr/og-image.png" },
+      { property: "og:locale", content: "hr_HR" },
     ],
-    links: [{ rel: "canonical", href: "/politika-kolacica" }],
+    links: [{ rel: "canonical", href: "https://arks.hr/politika-kolacica" }],
   }),
   component: () => (
     <>

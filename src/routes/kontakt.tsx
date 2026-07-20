@@ -7,13 +7,16 @@ import { MapPin, Phone, Smartphone, Printer, Mail, Clock, Send, CheckCircle2 } f
 export const Route = createFileRoute("/kontakt")({
   head: () => ({
     meta: [
-      { title: "Kontakt — ARKS d.o.o." },
-      { name: "description", content: "Kontaktirajte ARKS d.o.o. — Osječka 163, Tenja, Osijek. Telefon, e-mail i kontakt obrazac." },
-      { property: "og:title", content: "Kontakt — ARKS d.o.o." },
-      { property: "og:description", content: "Javite nam se — odgovaramo u kratkom roku." },
-      { property: "og:url", content: "/kontakt" },
+      { title: "Kontakt - ARKS" },
+      { name: "description", content: "Kontaktirajte ARKS za usluge zaštite na radu, zaštite od požara i zaštite okoliša. Sjedište: Osječka 163, Tenja." },
+      { property: "og:title", content: "Kontakt - ARKS" },
+      { property: "og:description", content: "Kontaktirajte ARKS za usluge zaštite na radu, zaštite od požara i zaštite okoliša. Sjedište: Osječka 163, Tenja." },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://arks.hr/kontakt" },
+      { property: "og:image", content: "https://arks.hr/og-image.png" },
+      { property: "og:locale", content: "hr_HR" },
     ],
-    links: [{ rel: "canonical", href: "/kontakt" }],
+    links: [{ rel: "canonical", href: "https://arks.hr/kontakt" }],
   }),
   component: Kontakt,
 });

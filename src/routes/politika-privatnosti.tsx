@@ -4,12 +4,16 @@ import { PageHero } from "@/components/site/PageHero";
 export const Route = createFileRoute("/politika-privatnosti")({
   head: () => ({
     meta: [
-      { title: "Politika privatnosti — ARKS d.o.o." },
+      { title: "Politika privatnosti - ARKS" },
       { name: "description", content: "Politika privatnosti tvrtke Agencija za razvoj i kontrolu sigurnosti d.o.o." },
-      { property: "og:title", content: "Politika privatnosti — ARKS d.o.o." },
-      { property: "og:url", content: "/politika-privatnosti" },
+      { property: "og:title", content: "Politika privatnosti - ARKS" },
+      { property: "og:description", content: "Politika privatnosti tvrtke Agencija za razvoj i kontrolu sigurnosti d.o.o." },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://arks.hr/politika-privatnosti" },
+      { property: "og:image", content: "https://arks.hr/og-image.png" },
+      { property: "og:locale", content: "hr_HR" },
     ],
-    links: [{ rel: "canonical", href: "/politika-privatnosti" }],
+    links: [{ rel: "canonical", href: "https://arks.hr/politika-privatnosti" }],
   }),
   component: () => (
     <>
