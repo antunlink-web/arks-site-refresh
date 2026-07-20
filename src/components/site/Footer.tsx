@@ -8,11 +8,11 @@ export function Footer() {
       <div className="mx-auto grid max-w-7xl gap-12 px-4 py-16 sm:px-6 lg:grid-cols-12 lg:gap-10 lg:px-8">
         {/* Brand block */}
         <div className="lg:col-span-4">
-          <div className="inline-flex items-center rounded-sm bg-white px-4 py-3 ring-1 ring-white/15">
+          <div className="inline-flex items-center rounded-sm bg-white px-5 py-4 ring-1 ring-white/15">
             <img
               src={arksLogo}
               alt="ARKS — Agencija za razvoj i kontrolu sigurnosti d.o.o."
-              className="h-12 w-auto"
+              className="h-16 w-auto lg:h-20"
             />
           </div>
           <p className="mt-5 max-w-sm text-sm leading-relaxed text-white/65">
