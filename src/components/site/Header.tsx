@@ -48,11 +48,11 @@ export function Header() {
         }`}
       >
         <div className="mx-auto flex h-24 max-w-7xl items-center justify-between gap-8 px-4 sm:px-6 lg:h-28 lg:px-8">
-          <Link to="/" className="flex items-center" onClick={() => setOpen(false)} aria-label="ARKS — naslovnica">
+          <Link to="/" className="flex items-center py-1" onClick={() => setOpen(false)} aria-label="ARKS — naslovnica">
             <img
               src={arksLogo}
               alt="ARKS — Agencija za razvoj i kontrolu sigurnosti d.o.o."
-              className="h-16 w-auto lg:h-20"
+              className="h-[88px] w-auto lg:h-[108px]"
             />
           </Link>
 
