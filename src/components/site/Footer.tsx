@@ -41,6 +41,9 @@ export function Footer() {
             <li><Link to="/zastita-na-radu" className="hover:text-white">Zaštita na radu</Link></li>
             <li><Link to="/zastita-od-pozara" className="hover:text-white">Zaštita od požara</Link></li>
             <li><Link to="/zastita-okolisa" className="hover:text-white">Zaštita okoliša</Link></li>
+            <li><Link to="/ispitivanje-plinskih-instalacija" className="hover:text-white">Ispitivanje plinskih instalacija</Link></li>
+            <li><Link to="/usluge" className="hover:text-white">Usluge</Link></li>
+            <li><Link to="/propisi" className="hover:text-white">Propisi</Link></li>
             <li><Link to="/o-nama" className="hover:text-white">O nama</Link></li>
             <li><Link to="/kontakt" className="hover:text-white">Kontakt</Link></li>
           </ul>
