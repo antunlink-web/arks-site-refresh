@@ -10,10 +10,13 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as IspitivanjePlinskihInstalacijaRouteImport } from './routes/ispitivanje-plinskih-instalacija'
 import { Route as KontaktRouteImport } from './routes/kontakt'
 import { Route as ONamaRouteImport } from './routes/o-nama'
 import { Route as PolitikaKolacicaRouteImport } from './routes/politika-kolacica'
 import { Route as PolitikaPrivatnostiRouteImport } from './routes/politika-privatnosti'
+import { Route as PropisiRouteImport } from './routes/propisi'
+import { Route as UslugeRouteImport } from './routes/usluge'
 import { Route as ZastitaNaRaduRouteImport } from './routes/zastita-na-radu'
 import { Route as ZastitaOdPozaraRouteImport } from './routes/zastita-od-pozara'
 import { Route as ZastitaOkolisaRouteImport } from './routes/zastita-okolisa'
@@ -23,6 +26,12 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const IspitivanjePlinskihInstalacijaRoute =
+  IspitivanjePlinskihInstalacijaRouteImport.update({
+    id: '/ispitivanje-plinskih-instalacija',
+    path: '/ispitivanje-plinskih-instalacija',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const KontaktRoute = KontaktRouteImport.update({
   id: '/kontakt',
   path: '/kontakt',
@@ -43,6 +52,16 @@ const PolitikaPrivatnostiRoute = PolitikaPrivatnostiRouteImport.update({
   path: '/politika-privatnosti',
   getParentRoute: () => rootRouteImport,
 } as any)
+const PropisiRoute = PropisiRouteImport.update({
+  id: '/propisi',
+  path: '/propisi',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const UslugeRoute = UslugeRouteImport.update({
+  id: '/usluge',
+  path: '/usluge',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ZastitaNaRaduRoute = ZastitaNaRaduRouteImport.update({
   id: '/zastita-na-radu',
   path: '/zastita-na-radu',
@@ -61,20 +80,26 @@ const ZastitaOkolisaRoute = ZastitaOkolisaRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/ispitivanje-plinskih-instalacija': typeof IspitivanjePlinskihInstalacijaRoute
   '/kontakt': typeof KontaktRoute
   '/o-nama': typeof ONamaRoute
   '/politika-kolacica': typeof PolitikaKolacicaRoute
   '/politika-privatnosti': typeof PolitikaPrivatnostiRoute
+  '/propisi': typeof PropisiRoute
+  '/usluge': typeof UslugeRoute
   '/zastita-na-radu': typeof ZastitaNaRaduRoute
   '/zastita-od-pozara': typeof ZastitaOdPozaraRoute
   '/zastita-okolisa': typeof ZastitaOkolisaRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/ispitivanje-plinskih-instalacija': typeof IspitivanjePlinskihInstalacijaRoute
   '/kontakt': typeof KontaktRoute
   '/o-nama': typeof ONamaRoute
   '/politika-kolacica': typeof PolitikaKolacicaRoute
   '/politika-privatnosti': typeof PolitikaPrivatnostiRoute
+  '/propisi': typeof PropisiRoute
+  '/usluge': typeof UslugeRoute
   '/zastita-na-radu': typeof ZastitaNaRaduRoute
   '/zastita-od-pozara': typeof ZastitaOdPozaraRoute
   '/zastita-okolisa': typeof ZastitaOkolisaRoute
@@ -82,10 +107,13 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/ispitivanje-plinskih-instalacija': typeof IspitivanjePlinskihInstalacijaRoute
   '/kontakt': typeof KontaktRoute
   '/o-nama': typeof ONamaRoute
   '/politika-kolacica': typeof PolitikaKolacicaRoute
   '/politika-privatnosti': typeof PolitikaPrivatnostiRoute
+  '/propisi': typeof PropisiRoute
+  '/usluge': typeof UslugeRoute
   '/zastita-na-radu': typeof ZastitaNaRaduRoute
   '/zastita-od-pozara': typeof ZastitaOdPozaraRoute
   '/zastita-okolisa': typeof ZastitaOkolisaRoute
@@ -94,30 +122,39 @@ export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
+    | '/ispitivanje-plinskih-instalacija'
     | '/kontakt'
     | '/o-nama'
     | '/politika-kolacica'
     | '/politika-privatnosti'
+    | '/propisi'
+    | '/usluge'
     | '/zastita-na-radu'
     | '/zastita-od-pozara'
     | '/zastita-okolisa'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
+    | '/ispitivanje-plinskih-instalacija'
     | '/kontakt'
     | '/o-nama'
     | '/politika-kolacica'
     | '/politika-privatnosti'
+    | '/propisi'
+    | '/usluge'
     | '/zastita-na-radu'
     | '/zastita-od-pozara'
     | '/zastita-okolisa'
   id:
     | '__root__'
     | '/'
+    | '/ispitivanje-plinskih-instalacija'
     | '/kontakt'
     | '/o-nama'
     | '/politika-kolacica'
     | '/politika-privatnosti'
+    | '/propisi'
+    | '/usluge'
     | '/zastita-na-radu'
     | '/zastita-od-pozara'
     | '/zastita-okolisa'
@@ -125,10 +162,13 @@ export interface FileRouteTypes {
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  IspitivanjePlinskihInstalacijaRoute: typeof IspitivanjePlinskihInstalacijaRoute
   KontaktRoute: typeof KontaktRoute
   ONamaRoute: typeof ONamaRoute
   PolitikaKolacicaRoute: typeof PolitikaKolacicaRoute
   PolitikaPrivatnostiRoute: typeof PolitikaPrivatnostiRoute
+  PropisiRoute: typeof PropisiRoute
+  UslugeRoute: typeof UslugeRoute
   ZastitaNaRaduRoute: typeof ZastitaNaRaduRoute
   ZastitaOdPozaraRoute: typeof ZastitaOdPozaraRoute
   ZastitaOkolisaRoute: typeof ZastitaOkolisaRoute
@@ -141,6 +181,13 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ispitivanje-plinskih-instalacija': {
+      id: '/ispitivanje-plinskih-instalacija'
+      path: '/ispitivanje-plinskih-instalacija'
+      fullPath: '/ispitivanje-plinskih-instalacija'
+      preLoaderRoute: typeof IspitivanjePlinskihInstalacijaRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/kontakt': {
@@ -171,6 +218,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof PolitikaPrivatnostiRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/propisi': {
+      id: '/propisi'
+      path: '/propisi'
+      fullPath: '/propisi'
+      preLoaderRoute: typeof PropisiRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/usluge': {
+      id: '/usluge'
+      path: '/usluge'
+      fullPath: '/usluge'
+      preLoaderRoute: typeof UslugeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/zastita-na-radu': {
       id: '/zastita-na-radu'
       path: '/zastita-na-radu'
@@ -197,10 +258,13 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  IspitivanjePlinskihInstalacijaRoute: IspitivanjePlinskihInstalacijaRoute,
   KontaktRoute: KontaktRoute,
   ONamaRoute: ONamaRoute,
   PolitikaKolacicaRoute: PolitikaKolacicaRoute,
   PolitikaPrivatnostiRoute: PolitikaPrivatnostiRoute,
+  PropisiRoute: PropisiRoute,
+  UslugeRoute: UslugeRoute,
   ZastitaNaRaduRoute: ZastitaNaRaduRoute,
   ZastitaOdPozaraRoute: ZastitaOdPozaraRoute,
   ZastitaOkolisaRoute: ZastitaOkolisaRoute,

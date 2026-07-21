@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://arks.hr/</loc><lastmod>2026-07-20</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://arks.hr/o-nama</loc><lastmod>2026-07-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://arks.hr/zastita-na-radu</loc><lastmod>2026-07-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://arks.hr/zastita-od-pozara</loc><lastmod>2026-07-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://arks.hr/zastita-okolisa</loc><lastmod>2026-07-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://arks.hr/kontakt</loc><lastmod>2026-07-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://arks.hr/politika-privatnosti</loc><lastmod>2026-07-20</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://arks.hr/politika-kolacica</loc><lastmod>2026-07-20</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://arks.hr/</loc><lastmod>2026-07-21</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://arks.hr/o-nama</loc><lastmod>2026-07-21</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://arks.hr/zastita-na-radu</loc><lastmod>2026-07-21</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://arks.hr/zastita-od-pozara</loc><lastmod>2026-07-21</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://arks.hr/zastita-okolisa</loc><lastmod>2026-07-21</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://arks.hr/ispitivanje-plinskih-instalacija</loc><lastmod>2026-07-21</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://arks.hr/usluge</loc><lastmod>2026-07-21</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://arks.hr/propisi</loc><lastmod>2026-07-21</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://arks.hr/kontakt</loc><lastmod>2026-07-21</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://arks.hr/politika-privatnosti</loc><lastmod>2026-07-21</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://arks.hr/politika-kolacica</loc><lastmod>2026-07-21</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
 </urlset>
