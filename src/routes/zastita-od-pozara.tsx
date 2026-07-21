@@ -29,6 +29,7 @@ export const Route = createFileRoute("/zastita-od-pozara")({
         "Pomoć pri ispunjavanju zakonskih obveza iz ZOP-a",
         "Vođenje propisane dokumentacije i evidencija",
         "Stručna podrška u komunikaciji s nadležnim tijelima",
+        "Ispitivanje ispravnosti i nepropusnosti plinskih instalacija",
       ]}
     />
   ),

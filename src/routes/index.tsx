@@ -14,6 +14,7 @@ import {
   ShieldCheck,
   BookOpen,
   Building2,
+  Gauge,
 } from "lucide-react";
 import heroImg from "@/assets/hero-safety.jpg";
 
@@ -290,6 +291,44 @@ function Home() {
             "Praćenje propisa i obavještavanje klijenata",
           ]}
         />
+      </section>
+
+      {/* SPECIAL ACTIVITY — Gas installations */}
+      <section className="border-y border-border bg-cream">
+        <div className="mx-auto grid max-w-7xl gap-10 px-4 py-20 sm:px-6 lg:grid-cols-12 lg:items-center lg:px-8">
+          <div className="lg:col-span-7">
+            <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-safety">Posebna djelatnost</p>
+            <h2 className="mt-5 font-display text-3xl leading-[1.1] tracking-tight sm:text-4xl">
+              Ispitivanje ispravnosti i nepropusnosti plinskih instalacija
+            </h2>
+            <p className="mt-5 max-w-2xl text-[15px] leading-relaxed text-foreground/75">
+              ARKS je ovlašteni ispitivač ispravnosti i nepropusnosti plinskih instalacija na
+              distribucijskom području HEP-PLIN-a d.o.o. — stručne razine I., II., III. i IV.
+            </p>
+            <Link
+              to="/ispitivanje-plinskih-instalacija"
+              className="mt-7 inline-flex items-center gap-2 rounded-sm bg-brand px-6 py-3 text-[12.5px] font-semibold uppercase tracking-[0.12em] text-brand-foreground hover:bg-brand-deep"
+            >
+              Saznajte više <ArrowRight className="h-4 w-4" />
+            </Link>
+          </div>
+          <div className="lg:col-span-5">
+            <div className="flex items-start gap-5 border border-border bg-background p-7">
+              <span className="grid h-14 w-14 shrink-0 place-items-center rounded-sm bg-brand/10 text-brand">
+                <Gauge className="h-7 w-7" />
+              </span>
+              <div>
+                <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">Ovlašteni ispitivač</p>
+                <p className="mt-2 font-display text-xl leading-tight tracking-tight">
+                  Stručne razine I. – IV.
+                </p>
+                <p className="mt-3 text-[13.5px] leading-relaxed text-foreground/70">
+                  Distribucijsko područje HEP-PLIN-a d.o.o.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* WHY ARKS — credibility band */}
