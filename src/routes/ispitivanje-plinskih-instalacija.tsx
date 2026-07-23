@@ -98,8 +98,9 @@ function Page() {
           <h2 className="mt-4 font-display text-3xl tracking-tight">Opseg ispitivanja</h2>
           <ul className="mt-8 grid gap-3 sm:grid-cols-2">
             {[
-              "Ispitivanje ispravnosti novih plinskih instalacija",
+              "Tlačna proba plinske instalacije",
               "Ispitivanje nepropusnosti plinskih instalacija",
+              "Ispitivanje ispravnosti novih plinskih instalacija",
               "Redovna i izvanredna kontrolna ispitivanja",
               "Ispitivanja nakon rekonstrukcije ili proširenja",
               "Izdavanje zapisnika i potvrda o ispitivanju",
