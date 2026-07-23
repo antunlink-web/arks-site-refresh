@@ -25,7 +25,7 @@ export const Route = createFileRoute("/zastita-okolisa")({
       points={[
         "Savjetovanje iz područja zaštite okoliša",
         "Vođenje propisanih evidencija i očevidnika",
-        "Podrška pri ispunjavanju ekoloških obveza",
+        "Izrada elaborata zaštite okoliša",
         "Suradnja s nadležnim tijelima",
         "Praćenje propisa i pravovremeno obavještavanje klijenata",
         "Priprema dokumentacije po zahtjevu klijenta",
