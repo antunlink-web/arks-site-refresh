@@ -6,9 +6,9 @@ export const Route = createFileRoute("/o-nama")({
   head: () => ({
     meta: [
       { title: "O nama - ARKS" },
-      { name: "description", content: "ARKS je tvrtka sa sjedištem u Tenji - Osijeka, specijalizirana za zaštitu na radu, zaštitu od požara i zaštitu okoliša." },
+      { name: "description", content: "ARKS je tvrtka sa sjedištem u Tenji - Osijek, specijalizirana za zaštitu na radu, zaštitu od požara i zaštitu okoliša." },
       { property: "og:title", content: "O nama - ARKS" },
-      { property: "og:description", content: "ARKS je tvrtka sa sjedištem u Tenji - Osijeka, specijalizirana za zaštitu na radu, zaštitu od požara i zaštitu okoliša." },
+      { property: "og:description", content: "ARKS je tvrtka sa sjedištem u Tenji - Osijek, specijalizirana za zaštitu na radu, zaštitu od požara i zaštitu okoliša." },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "https://arks.hr/o-nama" },
       { property: "og:image", content: "https://arks.hr/og-image.png" },
