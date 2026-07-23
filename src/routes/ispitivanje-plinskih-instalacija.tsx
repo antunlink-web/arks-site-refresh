@@ -21,7 +21,7 @@ export const Route = createFileRoute("/ispitivanje-plinskih-instalacija")({
 
 const features = [
   { icon: ShieldCheck, title: "Ovlašteni ispitivač", desc: "Ovlaštenje za ispitivanje ispravnosti i nepropusnosti plinskih instalacija na distribucijskom području HEP-PLIN-a d.o.o." },
-  { icon: Gauge, title: "Stručne razine I. – IV.", desc: "Provodimo ispitivanja na svim razinama složenosti plinskih instalacija — od jednostavnih do najsloženijih sustava." },
+  { icon: Gauge, title: "Stručne razine I. – IV.", desc: "Provodimo ispitivanja na svim razinama složenosti plinskih instalacija - od jednostavnih do najsloženijih sustava." },
   { icon: FileCheck2, title: "Propisana dokumentacija", desc: "Izdajemo zapisnike i potvrde o ispravnosti i nepropusnosti sukladno važećim tehničkim propisima i normama." },
   { icon: Wrench, title: "Terenski rad", desc: "Ispitivanja izvodimo na lokaciji objekta, uz koordinaciju s izvođačem radova i distributerom plina." },
 ];
@@ -40,7 +40,7 @@ function Page() {
           <div className="lg:col-span-5">
             <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-safety">O usluzi</p>
             <h2 className="mt-5 font-display text-3xl leading-[1.1] tracking-tight sm:text-4xl">
-              Sigurnost plinskih instalacija — stručno i u skladu s propisima.
+              Sigurnost plinskih instalacija - stručno i u skladu s propisima.
             </h2>
             <p className="mt-6 text-[15px] leading-relaxed text-foreground/70">
               Ispitivanje ispravnosti i nepropusnosti plinskih instalacija obavljamo sukladno
@@ -102,7 +102,7 @@ function Page() {
               Trebate ispitivanje plinskih instalacija?
             </h2>
             <p className="mt-4 max-w-xl text-[14.5px] leading-relaxed text-white/80">
-              Javite nam se s osnovnim podacima o objektu i vrsti instalacije — dostavit ćemo
+              Javite nam se s osnovnim podacima o objektu i vrsti instalacije - dostavit ćemo
               ponudu i dogovoriti termin izlaska na teren.
             </p>
           </div>

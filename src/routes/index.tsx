@@ -119,7 +119,7 @@ function Home() {
 
             <p className="mt-7 max-w-2xl text-[16.5px] leading-[1.75] text-foreground/75 sm:text-[18px]">
               Pomažemo hrvatskim tvrtkama u području zaštite na radu, zaštite od požara
-              i zaštite okoliša — jasno, stručno i u skladu sa zakonskim obvezama.
+              i zaštite okoliša - jasno, stručno i u skladu sa zakonskim obvezama.
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-3">
@@ -145,7 +145,7 @@ function Home() {
             </dl>
           </div>
 
-          {/* Right — image */}
+          {/* Right - image */}
           <div className="relative lg:col-span-5">
             <div className="relative h-full min-h-[420px]">
               <div className="absolute -left-3 top-6 hidden h-[calc(100%-3rem)] w-px bg-brand/20 lg:block" aria-hidden />
@@ -173,7 +173,7 @@ function Home() {
         </div>
       </section>
 
-      {/* SERVICES INTRO — editorial layout */}
+      {/* SERVICES INTRO - editorial layout */}
       <section className="mx-auto max-w-7xl px-4 py-24 sm:px-6 lg:px-8">
         <div className="grid gap-10 lg:grid-cols-12">
           <div className="lg:col-span-5">
@@ -182,7 +182,7 @@ function Home() {
               Tri područja,<br />jedan pouzdan partner.
             </h2>
             <p className="mt-6 max-w-md text-[15px] leading-relaxed text-foreground/70">
-              Cjelovita stručna podrška u svim ključnim područjima sigurnosti i zaštite —
+              Cjelovita stručna podrška u svim ključnim područjima sigurnosti i zaštite -
               od procjene rizika do svakodnevne podrške u poslovanju.
             </p>
           </div>
@@ -226,7 +226,7 @@ function Home() {
               Praktična podrška na svakom koraku.
             </h2>
             <p className="mt-6 text-[15px] leading-relaxed text-foreground/70">
-              Klijentima pružamo cjelovitu podršku — od izrade dokumentacije i procjene rizika
+              Klijentima pružamo cjelovitu podršku - od izrade dokumentacije i procjene rizika
               do osposobljavanja radnika i ispunjavanja zakonskih obveza.
             </p>
             <Link
@@ -256,7 +256,7 @@ function Home() {
         </div>
       </section>
 
-      {/* SERVICE DETAILS — editorial rows */}
+      {/* SERVICE DETAILS - editorial rows */}
       <section className="mx-auto max-w-7xl px-4 py-24 sm:px-6 lg:px-8">
         <ServiceRow
           n="01"
@@ -307,7 +307,7 @@ function Home() {
         />
       </section>
 
-      {/* SPECIAL ACTIVITY — Gas installations */}
+      {/* SPECIAL ACTIVITY - Gas installations */}
       <section className="border-y border-border bg-cream">
         <div className="mx-auto grid max-w-7xl gap-10 px-4 py-20 sm:px-6 lg:grid-cols-12 lg:items-center lg:px-8">
           <div className="lg:col-span-7">
@@ -317,7 +317,7 @@ function Home() {
             </h2>
             <p className="mt-5 max-w-2xl text-[15px] leading-relaxed text-foreground/75">
               ARKS je ovlašteni ispitivač ispravnosti i nepropusnosti plinskih instalacija na
-              distribucijskom području HEP-PLIN-a d.o.o. — stručne razine I., II., III. i IV.
+              distribucijskom području HEP-PLIN-a d.o.o. - stručne razine I., II., III. i IV.
             </p>
             <Link
               to="/ispitivanje-plinskih-instalacija"
@@ -345,7 +345,7 @@ function Home() {
         </div>
       </section>
 
-      {/* WHY ARKS — credibility band */}
+      {/* WHY ARKS - credibility band */}
       <section className="border-t border-brand-deep/40 bg-brand-deep text-white">
         <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
           <div className="flex flex-col items-start justify-between gap-8 lg:flex-row lg:items-end">

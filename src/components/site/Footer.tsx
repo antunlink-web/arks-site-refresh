@@ -11,13 +11,13 @@ export function Footer() {
           <div className="inline-flex items-center rounded-sm bg-white px-5 py-4 ring-1 ring-white/15">
             <img
               src={arksLogo}
-              alt="ARKS — Agencija za razvoj i kontrolu sigurnosti d.o.o."
+              alt="ARKS - Agencija za razvoj i kontrolu sigurnosti d.o.o."
               className="h-16 w-auto lg:h-20"
             />
           </div>
           <p className="mt-5 max-w-sm text-sm leading-relaxed text-white/65">
             Agencija za razvoj i kontrolu sigurnosti. Stručna podrška za zaštitu na radu,
-            zaštitu od požara i zaštitu okoliša — već dugi niz godina uz hrvatske tvrtke.
+            zaštitu od požara i zaštitu okoliša - već dugi niz godina uz hrvatske tvrtke.
           </p>
         </div>
 

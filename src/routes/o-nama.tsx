@@ -38,7 +38,7 @@ function ONama() {
             <div className="flex items-center justify-center">
               <img
                 src={arksLogo}
-                alt="ARKS — Agencija za razvoj i kontrolu sigurnosti d.o.o."
+                alt="ARKS - Agencija za razvoj i kontrolu sigurnosti d.o.o."
                 className="h-56 w-auto sm:h-64 lg:h-80"
               />
             </div>
