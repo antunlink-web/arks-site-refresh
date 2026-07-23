@@ -199,7 +199,7 @@ function Home() {
                     className="group grid grid-cols-12 items-center gap-4 py-7 transition-colors hover:bg-cream"
                   >
                     <span className="col-span-2 flex justify-center sm:justify-start">
-                      <img src={s.dot} alt="" aria-hidden className="h-6 w-6 sm:h-7 sm:w-7 object-contain" />
+                      <img src={s.dot} alt="" aria-hidden className="h-9 w-9 sm:h-11 sm:w-11 object-contain" />
                     </span>
                     <div className="col-span-8 sm:col-span-7">
                       <div className="flex items-center gap-3">
