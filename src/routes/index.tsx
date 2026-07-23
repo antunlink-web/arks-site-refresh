@@ -43,7 +43,7 @@ const services = [
     desc: "Procjena rizika, propisana dokumentacija i osposobljavanje radnika za rad na siguran način.",
     to: "/zastita-na-radu",
     code: "ZNR",
-    dot: "bg-[#2E7D32]",
+    dot: "border-[#2E7D32]",
   },
   {
     n: "02",
@@ -52,7 +52,7 @@ const services = [
     desc: "Planovi zaštite od požara, osposobljavanje pučanstva i pregledi mjera u poslovnim objektima.",
     to: "/zastita-od-pozara",
     code: "ZOP",
-    dot: "bg-[#C62828]",
+    dot: "border-[#C62828]",
   },
   {
     n: "03",
@@ -61,7 +61,7 @@ const services = [
     desc: "Vođenje propisanih evidencija, savjetovanje i podrška u ispunjavanju ekoloških obveza.",
     to: "/zastita-okolisa",
     code: "ZO",
-    dot: "bg-[#1565C0]",
+    dot: "border-[#1565C0]",
   },
   {
     n: "04",
@@ -70,7 +70,7 @@ const services = [
     desc: "Ovlašteni ispitivač na distribucijskom području HEP-PLIN-a d.o.o., stručne razine I. – IV.",
     to: "/ispitivanje-plinskih-instalacija",
     code: "PLIN",
-    dot: "bg-[#6B7280]",
+    dot: "border-[#6B7280]",
   },
 ] as const;
 
@@ -195,7 +195,7 @@ function Home() {
                     className="group grid grid-cols-12 items-center gap-4 py-7 transition-colors hover:bg-cream"
                   >
                     <span className="col-span-2 flex justify-center sm:justify-start">
-                      <span className={`inline-block h-4 w-4 rounded-full ring-2 ring-background shadow-sm sm:h-5 sm:w-5 ${s.dot}`} aria-hidden />
+                    <span className={`inline-block h-4 w-4 rounded-full border-2 bg-background sm:h-5 sm:w-5 ${s.dot}`} aria-hidden />
                     </span>
                     <div className="col-span-8 sm:col-span-7">
                       <div className="flex items-center gap-3">
