@@ -94,7 +94,7 @@ function Page() {
                 href="tel:+385986666936"
                 className="inline-flex items-center gap-2 font-display text-lg tracking-tight text-foreground hover:text-brand"
               >
-                <Phone className="h-5 w-5 text-brand" /> +385 98 666 6936
+                <Phone className="h-5 w-5 text-brand" /> +385 98 666 936
               </a>
               <span className="hidden text-muted-foreground sm:inline">|</span>
               <a
