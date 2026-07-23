@@ -6,9 +6,9 @@ export const Route = createFileRoute("/ispitivanje-plinskih-instalacija")({
   head: () => ({
     meta: [
       { title: "Ispitivanje plinskih instalacija - ARKS" },
-      { name: "description", content: "ARKS je ovlašteni ispitivač ispravnosti i nepropusnosti plinskih instalacija na distribucijskom području HEP-PLIN-a d.o.o." },
+      { name: "description", content: "ARKS je ovlašteni ispitivač ispravnosti i nepropusnosti plinskih instalacija na distribucijskom području HEP-PLIN-a d.o.o. Nudimo tlačnu probu i ispitivanje nepropusnosti plinskih instalacija." },
       { property: "og:title", content: "Ispitivanje plinskih instalacija - ARKS" },
-      { property: "og:description", content: "ARKS je ovlašteni ispitivač ispravnosti i nepropusnosti plinskih instalacija na distribucijskom području HEP-PLIN-a d.o.o." },
+      { property: "og:description", content: "ARKS je ovlašteni ispitivač ispravnosti i nepropusnosti plinskih instalacija na distribucijskom području HEP-PLIN-a d.o.o. Nudimo tlačnu probu i ispitivanje nepropusnosti plinskih instalacija." },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "https://arks.hr/ispitivanje-plinskih-instalacija" },
       { property: "og:image", content: "https://arks.hr/og-image.png" },
