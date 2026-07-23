@@ -6,9 +6,9 @@ export const Route = createFileRoute("/ispitivanje-plinskih-instalacija")({
   head: () => ({
     meta: [
       { title: "Ispitivanje plinskih instalacija - ARKS" },
-      { name: "description", content: "ARKS je ovlašteni ispitivač ispravnosti i nepropusnosti plinskih instalacija na distribucijskom području HEP-PLIN-a d.o.o." },
+      { name: "description", content: "ARKS je ovlašteni ispitivač ispravnosti i nepropusnosti plinskih instalacija na distribucijskom području HEP-PLIN-a d.o.o. Nudimo tlačnu probu i ispitivanje nepropusnosti plinskih instalacija." },
       { property: "og:title", content: "Ispitivanje plinskih instalacija - ARKS" },
-      { property: "og:description", content: "ARKS je ovlašteni ispitivač ispravnosti i nepropusnosti plinskih instalacija na distribucijskom području HEP-PLIN-a d.o.o." },
+      { property: "og:description", content: "ARKS je ovlašteni ispitivač ispravnosti i nepropusnosti plinskih instalacija na distribucijskom području HEP-PLIN-a d.o.o. Nudimo tlačnu probu i ispitivanje nepropusnosti plinskih instalacija." },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "https://arks.hr/ispitivanje-plinskih-instalacija" },
       { property: "og:image", content: "https://arks.hr/og-image.png" },
@@ -32,8 +32,28 @@ function Page() {
       <PageHero
         eyebrow="Posebna djelatnost"
         title="Ispitivanje nepropusnosti plinskih instalacija"
-        lead="Agencija za razvoj i kontrolu sigurnosti d.o.o. je ovlašteni ispitivač ispravnosti i nepropusnosti plinskih instalacija na distribucijskom području HEP-PLIN-a d.o.o. stručne razine I., II., III. i IV."
+        lead="Agencija za razvoj i kontrolu sigurnosti d.o.o. je ovlašteni ispitivač ispravnosti i nepropusnosti plinskih instalacija na distribucijskom području HEP-PLIN-a d.o.o. stručne razine I., II., III. i IV. U ponudi imamo tlačnu probu i ispitivanje nepropusnosti plinskih instalacija."
       />
+
+      <section className="border-b border-border bg-cream">
+        <div className="mx-auto max-w-5xl px-4 py-14 sm:px-6 lg:px-8">
+          <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-safety">Vrsta ispitivanja</p>
+          <h2 className="mt-4 font-display text-2xl tracking-tight sm:text-3xl">
+            Tlačna proba i ispitivanje nepropusnosti plinskih instalacija
+          </h2>
+          <ul className="mt-6 grid gap-3 sm:grid-cols-2">
+            {[
+              "Tlačna proba plinske instalacije",
+              "Ispitivanje nepropusnosti plinskih instalacija",
+            ].map((p) => (
+              <li key={p} className="flex items-start gap-3 rounded-sm border border-border bg-background p-4 text-[15px] leading-snug text-foreground/90">
+                <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-safety" />
+                <span>{p}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
 
       <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
         <div className="grid gap-10 lg:grid-cols-12">
@@ -43,9 +63,9 @@ function Page() {
               Sigurnost plinskih instalacija - stručno i u skladu s propisima.
             </h2>
             <p className="mt-6 text-[15px] leading-relaxed text-foreground/70">
-              Ispitivanje ispravnosti i nepropusnosti plinskih instalacija obavljamo sukladno
-              čl. 9. st. 3. Zakona o zapaljivim tekućinama i plinovima (NN 108/95, 56/10) te
-              pripadajućim tehničkim propisima.
+              Usluge tlačne probe i ispitivanja nepropusnosti plinskih instalacija obavljamo
+              sukladno čl. 9. st. 3. Zakona o zapaljivim tekućinama i plinovima (NN 108/95,
+              56/10) te pripadajućim tehničkim propisima.
             </p>
             <p className="mt-4 text-[15px] leading-relaxed text-foreground/70">
               Usluga je namijenjena investitorima, izvođačima radova i vlasnicima poslovnih te
@@ -78,8 +98,9 @@ function Page() {
           <h2 className="mt-4 font-display text-3xl tracking-tight">Opseg ispitivanja</h2>
           <ul className="mt-8 grid gap-3 sm:grid-cols-2">
             {[
-              "Ispitivanje ispravnosti novih plinskih instalacija",
+              "Tlačna proba plinske instalacije",
               "Ispitivanje nepropusnosti plinskih instalacija",
+              "Ispitivanje ispravnosti novih plinskih instalacija",
               "Redovna i izvanredna kontrolna ispitivanja",
               "Ispitivanja nakon rekonstrukcije ili proširenja",
               "Izdavanje zapisnika i potvrda o ispitivanju",
