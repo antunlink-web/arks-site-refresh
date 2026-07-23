@@ -32,7 +32,7 @@ function Page() {
       <PageHero
         eyebrow="Posebna djelatnost"
         title="Ispitivanje nepropusnosti plinskih instalacija"
-        lead="Agencija za razvoj i kontrolu sigurnosti d.o.o. je ovlašteni ispitivač ispravnosti i nepropusnosti plinskih instalacija na distribucijskom području HEP-PLIN-a d.o.o. stručne razine I., II., III. i IV."
+        lead="Agencija za razvoj i kontrolu sigurnosti d.o.o. je ovlašteni ispitivač ispravnosti i nepropusnosti plinskih instalacija na distribucijskom području HEP-PLIN-a d.o.o. stručne razine I., II., III. i IV. U ponudi imamo tlačnu probu i ispitivanje nepropusnosti plinskih instalacija."
       />
 
       <section className="border-b border-border bg-cream">
