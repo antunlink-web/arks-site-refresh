@@ -35,6 +35,26 @@ function Page() {
         lead="Agencija za razvoj i kontrolu sigurnosti d.o.o. je ovlašteni ispitivač ispravnosti i nepropusnosti plinskih instalacija na distribucijskom području HEP-PLIN-a d.o.o. stručne razine I., II., III. i IV."
       />
 
+      <section className="border-b border-border bg-cream">
+        <div className="mx-auto max-w-5xl px-4 py-14 sm:px-6 lg:px-8">
+          <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-safety">Vrsta ispitivanja</p>
+          <h2 className="mt-4 font-display text-2xl tracking-tight sm:text-3xl">
+            Tlačna proba i ispitivanje nepropusnosti plinskih instalacija
+          </h2>
+          <ul className="mt-6 grid gap-3 sm:grid-cols-2">
+            {[
+              "Tlačna proba plinske instalacije",
+              "Ispitivanje nepropusnosti plinskih instalacija",
+            ].map((p) => (
+              <li key={p} className="flex items-start gap-3 rounded-sm border border-border bg-background p-4 text-[15px] leading-snug text-foreground/90">
+                <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-safety" />
+                <span>{p}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
       <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
         <div className="grid gap-10 lg:grid-cols-12">
           <div className="lg:col-span-5">
