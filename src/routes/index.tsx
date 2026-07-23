@@ -97,7 +97,7 @@ function Home() {
           <div className="lg:col-span-7 lg:pr-6">
             <div className="flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.22em] text-brand">
               <span className="h-px w-8 bg-brand" />
-              <span>Od 2002. — Agencija za razvoj i kontrolu sigurnosti</span>
+              <span>Od 2002. - Agencija za razvoj i kontrolu sigurnosti d.o.o.</span>
             </div>
 
             <h1 className="mt-7 font-display text-[2.5rem] leading-[1.08] tracking-tight text-foreground sm:text-[3.4rem] lg:text-[3.9rem]">
