@@ -194,7 +194,9 @@ function Home() {
                     to={s.to}
                     className="group grid grid-cols-12 items-center gap-4 py-7 transition-colors hover:bg-cream"
                   >
-                    <span className="col-span-2 num font-display text-2xl text-brand/40 sm:text-3xl">{s.n}</span>
+                    <span className="col-span-2 flex justify-center sm:justify-start">
+                      <span className={`inline-block h-4 w-4 rounded-full ring-2 ring-background shadow-sm sm:h-5 sm:w-5 ${s.dot}`} aria-hidden />
+                    </span>
                     <div className="col-span-8 sm:col-span-7">
                       <div className="flex items-center gap-3">
                         <s.icon className="h-5 w-5 text-brand" />
