@@ -71,7 +71,7 @@ const services = [
     n: "04",
     icon: Cylinder,
     title: "Ispitivanje ispravnosti i nepropusnosti plinskih instalacija",
-    desc: "Ovlašteni ispitivač na distribucijskom području HEP-PLIN-a d.o.o., stručne razine I. – IV.",
+    desc: "Ovlašteni ispitivač na distribucijskom području HEP-PLIN-a d.o.o., stručne razine I. - IV.",
     to: "/ispitivanje-plinskih-instalacija",
     code: "PLIN",
     dot: circleGrey,
@@ -304,7 +304,7 @@ function Home() {
           points={[
             "Savjetovanje iz područja zaštite okoliša",
             "Vođenje propisanih evidencija i očevidnika",
-            "Podrška pri ispunjavanju ekoloških obveza",
+            "Izrada elaborata zaštite okoliša",
             "Suradnja s nadležnim tijelima",
             "Praćenje propisa i obavještavanje klijenata",
           ]}
@@ -338,7 +338,7 @@ function Home() {
               <div>
                 <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">Ovlašteni ispitivač</p>
                 <p className="mt-2 font-display text-xl leading-tight tracking-tight">
-                  Stručne razine I. – IV.
+                  Stručne razine I. - IV.
                 </p>
                 <p className="mt-3 text-[13.5px] leading-relaxed text-foreground/70">
                   Distribucijsko područje HEP-PLIN-a d.o.o.
