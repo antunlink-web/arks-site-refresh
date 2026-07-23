@@ -63,9 +63,9 @@ function Page() {
               Sigurnost plinskih instalacija - stručno i u skladu s propisima.
             </h2>
             <p className="mt-6 text-[15px] leading-relaxed text-foreground/70">
-              Ispitivanje ispravnosti i nepropusnosti plinskih instalacija obavljamo sukladno
-              čl. 9. st. 3. Zakona o zapaljivim tekućinama i plinovima (NN 108/95, 56/10) te
-              pripadajućim tehničkim propisima.
+              Usluge tlačne probe i ispitivanja nepropusnosti plinskih instalacija obavljamo
+              sukladno čl. 9. st. 3. Zakona o zapaljivim tekućinama i plinovima (NN 108/95,
+              56/10) te pripadajućim tehničkim propisima.
             </p>
             <p className="mt-4 text-[15px] leading-relaxed text-foreground/70">
               Usluga je namijenjena investitorima, izvođačima radova i vlasnicima poslovnih te
