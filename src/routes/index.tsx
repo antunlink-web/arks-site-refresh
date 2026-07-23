@@ -14,7 +14,7 @@ import {
   ShieldCheck,
   BookOpen,
   Building2,
-  Gauge,
+  Cylinder,
 } from "lucide-react";
 import heroImg from "@/assets/hero-safety.jpg";
 import circleGreen from "@/assets/arks_green_circle.png";
@@ -69,7 +69,7 @@ const services = [
   },
   {
     n: "04",
-    icon: Gauge,
+    icon: Cylinder,
     title: "Ispitivanje ispravnosti i nepropusnosti plinskih instalacija",
     desc: "Ovlašteni ispitivač na distribucijskom području HEP-PLIN-a d.o.o., stručne razine I. – IV.",
     to: "/ispitivanje-plinskih-instalacija",
@@ -333,7 +333,7 @@ function Home() {
           <div className="lg:col-span-5">
             <div className="flex items-start gap-5 border border-border bg-background p-7">
               <span className="grid h-14 w-14 shrink-0 place-items-center rounded-sm bg-brand/10 text-brand">
-                <Gauge className="h-7 w-7" />
+                <Cylinder className="h-7 w-7" />
               </span>
               <div>
                 <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">Ovlašteni ispitivač</p>
