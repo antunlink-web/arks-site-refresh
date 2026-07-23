@@ -84,7 +84,7 @@ const help = [
 const why = [
   { icon: ShieldCheck, title: "Stručnost u području sigurnosti i zaštite", desc: "Iskustvo u radu s tvrtkama različitih veličina i djelatnosti." },
   { icon: Building2, title: "Praktičan pristup poslovnim obvezama", desc: "Rješenja prilagođena stvarnim potrebama svakog klijenta." },
-  { icon: BookOpen, title: "Jasna komunikacija bez kompliciranja", desc: "Razumljivi savjeti, bez nepotrebne pravne magle." },
+  { icon: BookOpen, title: "Jasna komunikacija sa konkretnim rješenjima", desc: "Razumljivi savjeti." },
   { icon: FileCheck2, title: "Podrška u dokumentaciji i pregledima", desc: "Pratimo vas od procjene rizika do osposobljavanja." },
 ];
 
