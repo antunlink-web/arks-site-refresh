@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageHero } from "@/components/site/PageHero";
-import { CheckCircle2, Gauge, Phone, ShieldCheck, FileCheck2, Wrench } from "lucide-react";
+import { CheckCircle2, Gauge, Phone, ShieldCheck, FileCheck2, Wrench, Mail, User } from "lucide-react";
+import marioBanner from "@/assets/mario-banner.jpg";
 
 export const Route = createFileRoute("/ispitivanje-plinskih-instalacija")({
   head: () => ({
