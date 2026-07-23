@@ -86,7 +86,7 @@ function Kontakt() {
           <div className="mt-8 overflow-hidden rounded-xl border border-border">
             <iframe
               title="Karta - Osječka 163, Tenja, Osijek"
-              src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCjFSAS2qMX3RydPFzsGOzk_5leo9_ESA8&q=Osje%C4%8Dka+163%2C+31207+Tenja%2C+Hrvatska&center=45.5184243%2C18.7290797&zoom=16"
+              src="https://www.google.com/maps?q=Osje%C4%8Dka+163%2C+31207+Tenja%2C+Hrvatska&hl=hr&z=16&output=embed"
               className="h-64 w-full"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
