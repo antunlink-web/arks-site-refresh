@@ -62,7 +62,7 @@ const services = [
     n: "03",
     icon: Leaf,
     title: "Zaštita okoliša",
-    desc: "Vođenje propisanih evidencija, savjetovanje i podrška u ispunjavanju ekoloških obveza.",
+    desc: "Izrada elaborata zaštite okoliša, vođenje propisanih evidencija i savjetovanje iz područja okoliša.",
     to: "/zastita-okolisa",
     code: "ZO",
     dot: circleBlue,
