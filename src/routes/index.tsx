@@ -47,7 +47,7 @@ const services = [
     desc: "Procjena rizika, propisana dokumentacija i osposobljavanje radnika za rad na siguran način.",
     to: "/zastita-na-radu",
     code: "ZNR",
-    dot: "border-[#2E7D32]",
+    dot: circleGreen,
   },
   {
     n: "02",
@@ -56,7 +56,7 @@ const services = [
     desc: "Planovi zaštite od požara, osposobljavanje pučanstva i pregledi mjera u poslovnim objektima.",
     to: "/zastita-od-pozara",
     code: "ZOP",
-    dot: "border-[#C62828]",
+    dot: circleRed,
   },
   {
     n: "03",
@@ -65,7 +65,7 @@ const services = [
     desc: "Vođenje propisanih evidencija, savjetovanje i podrška u ispunjavanju ekoloških obveza.",
     to: "/zastita-okolisa",
     code: "ZO",
-    dot: "border-[#1565C0]",
+    dot: circleBlue,
   },
   {
     n: "04",
@@ -74,7 +74,7 @@ const services = [
     desc: "Ovlašteni ispitivač na distribucijskom području HEP-PLIN-a d.o.o., stručne razine I. – IV.",
     to: "/ispitivanje-plinskih-instalacija",
     code: "PLIN",
-    dot: "border-[#6B7280]",
+    dot: circleGrey,
   },
 ] as const;
 
