@@ -43,6 +43,7 @@ const services = [
     desc: "Procjena rizika, propisana dokumentacija i osposobljavanje radnika za rad na siguran način.",
     to: "/zastita-na-radu",
     code: "ZNR",
+    dot: "bg-[#2E7D32]",
   },
   {
     n: "02",
@@ -51,6 +52,7 @@ const services = [
     desc: "Planovi zaštite od požara, osposobljavanje pučanstva i pregledi mjera u poslovnim objektima.",
     to: "/zastita-od-pozara",
     code: "ZOP",
+    dot: "bg-[#C62828]",
   },
   {
     n: "03",
@@ -59,6 +61,16 @@ const services = [
     desc: "Vođenje propisanih evidencija, savjetovanje i podrška u ispunjavanju ekoloških obveza.",
     to: "/zastita-okolisa",
     code: "ZO",
+    dot: "bg-[#1565C0]",
+  },
+  {
+    n: "04",
+    icon: Gauge,
+    title: "Ispitivanje ispravnosti i nepropusnosti plinskih instalacija",
+    desc: "Ovlašteni ispitivač na distribucijskom području HEP-PLIN-a d.o.o., stručne razine I. – IV.",
+    to: "/ispitivanje-plinskih-instalacija",
+    code: "PLIN",
+    dot: "bg-[#6B7280]",
   },
 ] as const;
 
@@ -97,7 +109,7 @@ function Home() {
           <div className="lg:col-span-7 lg:pr-6">
             <div className="flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.22em] text-brand">
               <span className="h-px w-8 bg-brand" />
-              <span>Od 2002. — Agencija za razvoj i kontrolu sigurnosti</span>
+              <span>Od 2002. - Agencija za razvoj i kontrolu sigurnosti d.o.o.</span>
             </div>
 
             <h1 className="mt-7 font-display text-[2.5rem] leading-[1.08] tracking-tight text-foreground sm:text-[3.4rem] lg:text-[3.9rem]">
@@ -182,7 +194,9 @@ function Home() {
                     to={s.to}
                     className="group grid grid-cols-12 items-center gap-4 py-7 transition-colors hover:bg-cream"
                   >
-                    <span className="col-span-2 num font-display text-2xl text-brand/40 sm:text-3xl">{s.n}</span>
+                    <span className="col-span-2 flex justify-center sm:justify-start">
+                      <span className={`inline-block h-4 w-4 rounded-full ring-2 ring-background shadow-sm sm:h-5 sm:w-5 ${s.dot}`} aria-hidden />
+                    </span>
                     <div className="col-span-8 sm:col-span-7">
                       <div className="flex items-center gap-3">
                         <s.icon className="h-5 w-5 text-brand" />
