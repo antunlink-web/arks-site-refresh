@@ -195,7 +195,7 @@ function Home() {
                     className="group grid grid-cols-12 items-center gap-4 py-7 transition-colors hover:bg-cream"
                   >
                     <span className="col-span-2 flex justify-center sm:justify-start">
-                      <span className={`inline-block h-4 w-4 rounded-full ring-2 ring-background shadow-sm sm:h-5 sm:w-5 ${s.dot}`} aria-hidden />
+                    <span className={`inline-block h-4 w-4 rounded-full border-2 bg-background sm:h-5 sm:w-5 ${s.dot}`} aria-hidden />
                     </span>
                     <div className="col-span-8 sm:col-span-7">
                       <div className="flex items-center gap-3">
