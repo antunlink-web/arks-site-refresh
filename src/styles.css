@@ -69,7 +69,7 @@
   --accent: oklch(0.94 0.008 250);
   --accent-foreground: oklch(0.22 0.03 256);
 
-  /* Muted safety orange — burnt, less saturated */
+  /* Muted safety orange - burnt, less saturated */
   --safety: oklch(0.6 0.14 45);
   --safety-foreground: oklch(0.99 0 0);
 

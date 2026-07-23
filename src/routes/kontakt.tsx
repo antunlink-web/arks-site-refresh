@@ -55,7 +55,7 @@ function Kontakt() {
     }
     setErrors({});
     // Demo: open user's mail client with prepared message
-    const subject = encodeURIComponent(`Upit s web stranice — ${res.data.topic}`);
+    const subject = encodeURIComponent(`Upit s web stranice - ${res.data.topic}`);
     const body = encodeURIComponent(
       `Ime / tvrtka: ${res.data.name}\nE-mail: ${res.data.email}\nTelefon: ${res.data.phone || "-"}\nVrsta upita: ${res.data.topic}\n\nPoruka:\n${res.data.message}`
     );
@@ -68,7 +68,7 @@ function Kontakt() {
       <PageHero
         eyebrow="Kontakt"
         title="Javite nam se."
-        lead="Opišite vaše potrebe — predložit ćemo konkretne korake i ponudu prilagođenu vašoj djelatnosti."
+        lead="Opišite vaše potrebe - predložit ćemo konkretne korake i ponudu prilagođenu vašoj djelatnosti."
       />
       <section className="mx-auto grid max-w-7xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-5 lg:px-8">
         {/* Contact details */}
@@ -85,7 +85,7 @@ function Kontakt() {
 
           <div className="mt-8 overflow-hidden rounded-xl border border-border">
             <iframe
-              title="Karta — Osječka 163, Tenja, Osijek"
+              title="Karta - Osječka 163, Tenja, Osijek"
               src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCjFSAS2qMX3RydPFzsGOzk_5leo9_ESA8&q=Osje%C4%8Dka+163%2C+31207+Tenja%2C+Hrvatska&center=45.5184243%2C18.7290797&zoom=16"
               className="h-64 w-full"
               loading="lazy"

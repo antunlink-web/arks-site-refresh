@@ -71,7 +71,7 @@ const groups: Group[] = [
     icon: Gauge,
     intro: "Ispitivanja i pregledi električnih, plinskih, protupožarnih i drugih tehničkih sustava.",
     items: [
-      { title: "Ispitivanje električnih instalacija", ref: "Tehnički propis za niskonaponske električne instalacije (NN 5/10); čl. 38. Zakona o ZOP-u (NN 92/10) — otpor petlje, otpor izolacije, neprekinutost zaštitnog vodiča, otpor uzemljenja" },
+      { title: "Ispitivanje električnih instalacija", ref: "Tehnički propis za niskonaponske električne instalacije (NN 5/10); čl. 38. Zakona o ZOP-u (NN 92/10) - otpor petlje, otpor izolacije, neprekinutost zaštitnog vodiča, otpor uzemljenja" },
       { title: "Ispitivanje i mjerenje sustava zaštite od djelovanja munje na građevinama", ref: "Tehnički propis (NN 87/08, 33/10)" },
       { title: "Vizualni pregled sustava zaštite od djelovanja munje na građevinama", ref: "Tehnički propis (NN 87/08, 33/10)" },
       { title: "Ispitivanje sigurnosne / protupanične rasvjete", ref: "čl. 40. Zakona o ZOP-u; Tehnički propis za niskonaponske električne instalacije (NN 5/10)" },
@@ -111,7 +111,7 @@ function Page() {
       <PageHero
         eyebrow="Usluge"
         title="Usluge koje možemo ponuditi"
-        lead="Cjelovita stručna podrška iz područja zaštite na radu, zaštite od požara, ispitivanja, osposobljavanja i zaštite okoliša — prilagođena stvarnim potrebama vaše tvrtke."
+        lead="Cjelovita stručna podrška iz područja zaštite na radu, zaštite od požara, ispitivanja, osposobljavanja i zaštite okoliša - prilagođena stvarnim potrebama vaše tvrtke."
       />
 
       <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
@@ -190,7 +190,7 @@ function Page() {
               Trebate ponudu prilagođenu vašoj djelatnosti?
             </h2>
             <p className="mt-2 text-[14.5px] text-foreground/70">
-              Pošaljite kratak opis potreba — predložit ćemo konkretne korake i cijene.
+              Pošaljite kratak opis potreba - predložit ćemo konkretne korake i cijene.
             </p>
           </div>
           <div className="flex flex-wrap gap-3">

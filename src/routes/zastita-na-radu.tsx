@@ -55,7 +55,7 @@ export function ServicePage({
         </ul>
         <div className="mt-10 rounded-xl border border-border bg-slate-surface p-6">
           <p className="text-sm text-foreground/85">
-            Trebate ponudu prilagođenu vašoj djelatnosti? Javite nam se s kratkim opisom potreba — predložit ćemo konkretne korake.
+            Trebate ponudu prilagođenu vašoj djelatnosti? Javite nam se s kratkim opisom potreba - predložit ćemo konkretne korake.
           </p>
           <div className="mt-4 flex flex-wrap gap-3">
             <Link to="/kontakt" className="inline-flex items-center rounded-md bg-safety px-5 py-3 text-sm font-semibold text-safety-foreground hover:opacity-90">

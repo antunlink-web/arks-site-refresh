@@ -65,8 +65,8 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
   head: () => ({
     meta: [
-      { title: "ARKS d.o.o. — Zaštita na radu, zaštita od požara i zaštita okoliša" },
-      { name: "description", content: "Agencija za razvoj i kontrolu sigurnosti d.o.o. — stručna podrška za zaštitu na radu, zaštitu od požara i zaštitu okoliša. Tenja, Osijek." },
+      { title: "ARKS d.o.o. - Zaštita na radu, zaštita od požara i zaštita okoliša" },
+      { name: "description", content: "Agencija za razvoj i kontrolu sigurnosti d.o.o. - stručna podrška za zaštitu na radu, zaštitu od požara i zaštitu okoliša. Tenja, Osijek." },
     ],
   }),
   component: RootComponent,
