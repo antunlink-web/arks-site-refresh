@@ -17,6 +17,10 @@ import {
   Gauge,
 } from "lucide-react";
 import heroImg from "@/assets/hero-safety.jpg";
+import circleGreen from "@/assets/arks_green_circle.png";
+import circleRed from "@/assets/arks_red_circle.png";
+import circleBlue from "@/assets/arks_blue_circle.png";
+import circleGrey from "@/assets/arks_grey_circle.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -43,7 +47,7 @@ const services = [
     desc: "Procjena rizika, propisana dokumentacija i osposobljavanje radnika za rad na siguran način.",
     to: "/zastita-na-radu",
     code: "ZNR",
-    dot: "border-[#2E7D32]",
+    dot: circleGreen,
   },
   {
     n: "02",
@@ -52,7 +56,7 @@ const services = [
     desc: "Planovi zaštite od požara, osposobljavanje pučanstva i pregledi mjera u poslovnim objektima.",
     to: "/zastita-od-pozara",
     code: "ZOP",
-    dot: "border-[#C62828]",
+    dot: circleRed,
   },
   {
     n: "03",
@@ -61,7 +65,7 @@ const services = [
     desc: "Vođenje propisanih evidencija, savjetovanje i podrška u ispunjavanju ekoloških obveza.",
     to: "/zastita-okolisa",
     code: "ZO",
-    dot: "border-[#1565C0]",
+    dot: circleBlue,
   },
   {
     n: "04",
@@ -70,7 +74,7 @@ const services = [
     desc: "Ovlašteni ispitivač na distribucijskom području HEP-PLIN-a d.o.o., stručne razine I. – IV.",
     to: "/ispitivanje-plinskih-instalacija",
     code: "PLIN",
-    dot: "border-[#6B7280]",
+    dot: circleGrey,
   },
 ] as const;
 
@@ -195,7 +199,7 @@ function Home() {
                     className="group grid grid-cols-12 items-center gap-4 py-7 transition-colors hover:bg-cream"
                   >
                     <span className="col-span-2 flex justify-center sm:justify-start">
-                    <span className={`inline-block h-4 w-4 rounded-full border-2 bg-background sm:h-5 sm:w-5 ${s.dot}`} aria-hidden />
+                      <img src={s.dot} alt="" aria-hidden className="h-6 w-6 sm:h-7 sm:w-7 object-contain" />
                     </span>
                     <div className="col-span-8 sm:col-span-7">
                       <div className="flex items-center gap-3">
