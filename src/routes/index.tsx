@@ -14,7 +14,7 @@ import {
   ShieldCheck,
   BookOpen,
   Building2,
-  Gauge,
+  Cylinder,
 } from "lucide-react";
 import heroImg from "@/assets/hero-safety.jpg";
 import circleGreen from "@/assets/arks_green_circle.png";
