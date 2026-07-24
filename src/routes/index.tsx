@@ -183,7 +183,7 @@ function Home() {
           <div className="lg:col-span-5">
             <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-safety">Područja djelovanja</p>
             <h2 className="mt-5 font-display text-4xl leading-[1.1] tracking-tight sm:text-5xl">
-              Tri područja,<br />jedan pouzdan partner.
+              Četiri područja,<br />jedan pouzdan partner.
             </h2>
             <p className="mt-6 max-w-md text-[15px] leading-relaxed text-foreground/70">
               Cjelovita stručna podrška u svim ključnim područjima sigurnosti i zaštite -
@@ -320,8 +320,8 @@ function Home() {
               Ispitivanje ispravnosti i nepropusnosti plinskih instalacija
             </h2>
             <p className="mt-5 max-w-2xl text-[15px] leading-relaxed text-foreground/75">
-              ARKS je ovlašteni ispitivač ispravnosti i nepropusnosti plinskih instalacija na
-              distribucijskom području HEP-PLIN-a d.o.o. - stručne razine I., II., III. i IV.
+              ARKS je ovlašteni ispitivač ispravnosti i nepropusnosti plinskih instalacija na{" "}
+              <strong className="font-semibold text-foreground">distribucijskom području HEP-PLIN-a d.o.o.</strong>
             </p>
             <Link
               to="/ispitivanje-plinskih-instalacija"
@@ -338,10 +338,10 @@ function Home() {
               <div>
                 <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">Ovlašteni ispitivač</p>
                 <p className="mt-2 font-display text-xl leading-tight tracking-tight">
-                  Stručne razine I. - IV.
+                  Tlačna proba i ispitivanje nepropusnosti
                 </p>
                 <p className="mt-3 text-[13.5px] leading-relaxed text-foreground/70">
-                  Distribucijsko područje HEP-PLIN-a d.o.o.
+                  <strong className="font-semibold text-foreground">Distribucijsko područje HEP-PLIN-a d.o.o.</strong>
                 </p>
               </div>
             </div>
