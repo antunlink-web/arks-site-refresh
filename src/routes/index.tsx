@@ -71,10 +71,10 @@ const services = [
     n: "04",
     icon: Cylinder,
     title: "Ispitivanje ispravnosti i nepropusnosti plinskih instalacija",
-    desc: "Ovlašteni ispitivač na distribucijskom području HEP-PLIN-a d.o.o., stručne razine I. - IV.",
+    desc: "Ovlašteni ispitivač na distribucijskom području HEP-PLIN-a d.o.o.",
     to: "/ispitivanje-plinskih-instalacija",
     code: "PLIN",
-    dot: circleGrey,
+    dot: circleYellow,
   },
 ] as const;
 
