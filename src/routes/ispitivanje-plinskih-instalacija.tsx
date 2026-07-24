@@ -21,7 +21,6 @@ export const Route = createFileRoute("/ispitivanje-plinskih-instalacija")({
 
 const features = [
   { icon: ShieldCheck, title: "Ovlašteni ispitivač", desc: "Ovlaštenje za ispitivanje ispravnosti i nepropusnosti plinskih instalacija na distribucijskom području HEP-PLIN-a d.o.o." },
-  { icon: Gauge, title: "Vrsta ispitivanja", desc: "Tlačna proba plinske instalacije (na čvrstoću i nepropusnost).\nIspitivanje nepropusnosti plinskih instalacija." },
   { icon: FileCheck2, title: "Propisana dokumentacija", desc: "Izdajemo zapisnike i potvrde o ispravnosti i nepropusnosti sukladno važećim tehničkim propisima i normama." },
   { icon: Wrench, title: "Terenski rad", desc: "Ispitivanja izvodimo na lokaciji objekta, uz koordinaciju s izvođačem radova i distributerom plina." },
 ];
@@ -32,7 +31,7 @@ function Page() {
       <PageHero
         eyebrow="Posebna djelatnost"
         title="Ispitivanje nepropusnosti plinskih instalacija"
-        lead="Agencija za razvoj i kontrolu sigurnosti d.o.o. je ovlašteni ispitivač ispravnosti i nepropusnosti plinskih instalacija na distribucijskom području HEP-PLIN-a d.o.o. stručne razine I., II., III. i IV. U ponudi imamo tlačnu probu i ispitivanje nepropusnosti plinskih instalacija."
+        lead="Agencija za razvoj i kontrolu sigurnosti d.o.o. je ovlašteni ispitivač ispravnosti i nepropusnosti plinskih instalacija na distribucijskom području HEP-PLIN-a d.o.o. U ponudi imamo tlačnu probu i ispitivanje nepropusnosti plinskih instalacija."
       />
 
 
