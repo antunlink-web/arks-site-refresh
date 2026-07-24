@@ -20,7 +20,7 @@ import heroImg from "@/assets/hero-safety.jpg";
 import circleGreen from "@/assets/arks_green_circle.png";
 import circleRed from "@/assets/arks_red_circle.png";
 import circleBlue from "@/assets/arks_blue_circle.png";
-import circleGrey from "@/assets/arks_grey_circle.png";
+import circleYellow from "@/assets/arks_yellow_circle.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
