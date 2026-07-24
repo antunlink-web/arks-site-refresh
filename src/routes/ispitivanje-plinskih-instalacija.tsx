@@ -73,6 +73,41 @@ function Page() {
       </section>
 
 
+      <section className="border-y border-border bg-cream">
+        <div className="mx-auto max-w-5xl px-4 py-20 sm:px-6 lg:px-8">
+          <p className="text-center text-[11px] font-semibold uppercase tracking-[0.22em] text-safety">Vrsta ispitivanja</p>
+          <h2 className="mt-4 text-center font-display text-3xl leading-[1.1] tracking-tight sm:text-4xl">
+            Tlačna proba i ispitivanje nepropusnosti
+          </h2>
+
+          <div className="mt-10 grid gap-6 md:grid-cols-2">
+            <div className="rounded-sm border border-border bg-background p-8">
+              <div className="flex items-center gap-3">
+                <Gauge className="h-6 w-6 text-brand" />
+                <h3 className="font-display text-xl leading-tight tracking-tight">Tlačna proba instalacije</h3>
+              </div>
+              <p className="mt-4 text-[14.5px] leading-relaxed text-foreground/75">
+                Za novogradnje i rekonstruirane instalacije provodimo tlačnu probu na čvrstoću i
+                nepropusnost. Ispitivanjem se utvrđuje može li cjevovod sigurno podnijeti ispitni
+                tlak te postoje li propuštanja na cijevima, spojevima i armaturi.
+              </p>
+            </div>
+            <div className="rounded-sm border border-border bg-background p-8">
+              <div className="flex items-center gap-3">
+                <ShieldCheck className="h-6 w-6 text-brand" />
+                <h3 className="font-display text-xl leading-tight tracking-tight">Ispitivanje nepropusnosti</h3>
+              </div>
+              <p className="mt-4 text-[14.5px] leading-relaxed text-foreground/75">
+                Za postojeće plinske instalacije obavljamo provjeru nepropusnosti plinskog
+                cjevovoda i priključenih plinskih trošila. Pregled može uključivati vizualnu
+                kontrolu, tlačnu probu i lociranje mjesta eventualnog propuštanja odgovarajućim
+                mjernim uređajima.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="border-y border-border bg-background">
         <div className="mx-auto max-w-3xl px-4 py-16 sm:px-6 lg:px-8">
           <p className="text-center text-[11px] font-semibold uppercase tracking-[0.22em] text-safety">Ovlašteni ispitivač</p>
@@ -84,39 +119,41 @@ function Page() {
             <div className="text-center">
               <p className="font-display text-3xl leading-tight tracking-tight sm:text-4xl">Mario A. Benc</p>
               <p className="mx-auto mt-2 max-w-lg text-[14px] text-foreground/70">
-                Stručne razine I., II., III. i IV. - distribucijsko područje HEP-PLIN-a d.o.o.
+                Distribucijsko područje HEP-PLIN-a d.o.o.
               </p>
             </div>
 
-            <div className="mt-6 flex flex-col items-center gap-3 border-t border-border pt-6 sm:flex-row sm:justify-center">
-              <a
-                href="tel:+385986666936"
-                className="inline-flex items-center gap-2 font-display text-lg tracking-tight text-foreground hover:text-brand"
-              >
-                <Phone className="h-5 w-5 text-brand" /> +385 98 666 936
-              </a>
-              <span className="hidden text-muted-foreground sm:inline">|</span>
-              <a
-                href="mailto:mario.benc@arks.hr"
-                className="inline-flex items-center gap-2 font-display text-lg tracking-tight text-foreground hover:text-brand"
-              >
-                <Mail className="h-5 w-5 text-brand" /> mario.benc@arks.hr
-              </a>
-            </div>
-
-            <div className="mt-6 flex flex-wrap justify-center gap-3">
-              <a
-                href="mailto:mario.benc@arks.hr"
-                className="inline-flex items-center gap-2 rounded-sm bg-safety px-6 py-3 text-[12.5px] font-semibold uppercase tracking-[0.12em] text-safety-foreground hover:opacity-90"
-              >
-                <Mail className="h-4 w-4" /> Pošaljite upit
-              </a>
-              <a
-                href="tel:+385986666936"
-                className="inline-flex items-center gap-2 rounded-sm border border-border bg-background px-6 py-3 text-[12.5px] font-semibold uppercase tracking-[0.12em] text-foreground hover:bg-secondary"
-              >
-                <Phone className="h-4 w-4" /> Nazovite Marija
-              </a>
+            <div className="mt-8 grid gap-5 border-t border-border pt-8 sm:grid-cols-2">
+              <div className="flex flex-col items-center text-center">
+                <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">Kontakt broj</p>
+                <a
+                  href="tel:+385986666936"
+                  className="mt-2 inline-flex items-center gap-2 font-display text-xl tracking-tight text-foreground hover:text-brand"
+                >
+                  <Phone className="h-5 w-5 text-brand" /> +385 98 666 936
+                </a>
+                <a
+                  href="tel:+385986666936"
+                  className="mt-4 inline-flex items-center gap-2 rounded-sm border border-border bg-background px-6 py-3 text-[12.5px] font-semibold uppercase tracking-[0.12em] text-foreground hover:bg-secondary"
+                >
+                  <Phone className="h-4 w-4" /> Nazovite
+                </a>
+              </div>
+              <div className="flex flex-col items-center text-center">
+                <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">E-mail</p>
+                <a
+                  href="mailto:mario.benc@arks.hr"
+                  className="mt-2 inline-flex items-center gap-2 font-display text-xl tracking-tight text-foreground hover:text-brand"
+                >
+                  <Mail className="h-5 w-5 text-brand" /> mario.benc@arks.hr
+                </a>
+                <a
+                  href="mailto:mario.benc@arks.hr"
+                  className="mt-4 inline-flex items-center gap-2 rounded-sm bg-safety px-6 py-3 text-[12.5px] font-semibold uppercase tracking-[0.12em] text-safety-foreground hover:opacity-90"
+                >
+                  <Mail className="h-4 w-4" /> Pošaljite e-mail
+                </a>
+              </div>
             </div>
           </div>
         </div>
